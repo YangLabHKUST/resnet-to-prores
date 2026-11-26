@@ -1,0 +1,75 @@
+# CIFAR-100 Training Configuration
+
+# Experiment Configuration
+experiment:
+  job_name: "resnet50_postnorm_proresT1"
+  work_dir: "./results/cifar100"
+
+# Data Configuration
+data:
+  dataset: "cifar100"  # Options: "imagenet100", "cifar10", "cifar100"
+  root: "./data"  # Dataset root directory
+  num_classes: 100
+  img_size: 32  # Use 224 for ImageNet, 32 for CIFAR datasets (native resolution)
+  num_workers: 16
+  pin_memory: true
+
+# Model Configuration
+model:
+  name: "resnet50"
+  pretrained: false  # Whether to use pretrained weights
+  norm_type: "post"
+  
+  # ProRes Configuration
+  prores:
+    enabled: true
+    T: 1.0
+
+# Training Configuration
+training:
+  epochs: 100
+  batch_size: 3072
+  
+  # Optimizer Configuration
+  optimizer:
+    type: "AdamW"
+    lr: 0.001
+    weight_decay: 0.01
+    beta1: 0.9
+    beta2: 0.999
+  
+  # Learning Rate Scheduler
+  scheduler:
+    type: "warmup_cosine"  # Options: warmup_cosine, step
+    warmup_epochs: 5
+    min_lr: 0.0
+  
+  # Loss Function Configuration
+  criterion:
+    type: "CrossEntropyLoss"
+    label_smoothing: 0.1
+
+# Mixed Precision Training
+amp:
+  enabled: true
+
+# Miscellaneous Configuration
+misc:
+  seed: 42
+  device: "cuda"
+  
+# Checkpoint Configuration
+checkpoint:
+  save_dir: "checkpoints"
+  save_freq: 10  # Save checkpoint every N epochs
+  resume: ""  # Path to checkpoint for resuming training
+
+# Evaluation Configuration
+eval:
+  eval_only: false
+  eval_freq: 1  # Evaluate every N epochs
+
+# Logging Configuration
+logging:
+  log_dir: "logs"
+  print_freq: 1  # Print log every N batches

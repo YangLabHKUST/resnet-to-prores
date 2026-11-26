@@ -1,9 +1,9 @@
-# ResNet50 on ImageNet100 Training Configuration
+# ImageNet-100 Training Configuration
 
 # Experiment Configuration
 experiment:
   job_name: "resnet152_postnorm"
-  work_dir: "./results"
+  work_dir: "./results/imagenet100"
 
 # Data Configuration
 data:

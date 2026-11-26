@@ -1,7 +1,9 @@
 data/imagenet100/
+data/cifar-10-batches-py/
+data/cifar-100-python/
 data/*.tar.gz
 __pycache__/
 *.pyc
 .vscode/
-results/*/train_*/
+results/**/train_*/
 *.pth

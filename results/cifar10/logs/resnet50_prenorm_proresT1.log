@@ -1,0 +1,2066 @@
+Using device: cuda
+Loading data from ./data...
+Number of classes: 10
+Creating model: resnet50...
+Using CIFAR-10 stem (3x3 conv, no maxpool) for small images (32x32)
+Using ProRes with pre-norm, T=1.0
+Total parameters: 23,516,874
+Trainable parameters: 23,516,874
+Using optimizer: AdamW
+train.py:348: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if config['amp'].get('enabled', False) else None
+
+============================================================
+Start training
+============================================================
+
+Epoch: 1/100, LR: 0.000000
+train.py:86: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch [1/100] Batch [1/16] Loss: 2.3343 Top-1: 7.71%, Top-5: 49.93% Time: 00:00:03
+Epoch [1/100] Batch [2/16] Loss: 2.3321 Top-1: 7.63%, Top-5: 50.36% Time: 00:00:04
+Epoch [1/100] Batch [3/16] Loss: 2.3328 Top-1: 7.61%, Top-5: 50.42% Time: 00:00:04
+Epoch [1/100] Batch [4/16] Loss: 2.3338 Top-1: 7.66%, Top-5: 50.14% Time: 00:00:05
+Epoch [1/100] Batch [5/16] Loss: 2.3338 Top-1: 7.46%, Top-5: 50.40% Time: 00:00:06
+Epoch [1/100] Batch [6/16] Loss: 2.3342 Top-1: 7.32%, Top-5: 50.19% Time: 00:00:07
+Epoch [1/100] Batch [7/16] Loss: 2.3345 Top-1: 7.34%, Top-5: 50.20% Time: 00:00:08
+Epoch [1/100] Batch [8/16] Loss: 2.3352 Top-1: 7.25%, Top-5: 50.07% Time: 00:00:08
+Epoch [1/100] Batch [9/16] Loss: 2.3357 Top-1: 7.15%, Top-5: 49.88% Time: 00:00:09
+Epoch [1/100] Batch [10/16] Loss: 2.3353 Top-1: 7.18%, Top-5: 49.96% Time: 00:00:10
+Epoch [1/100] Batch [11/16] Loss: 2.3359 Top-1: 7.16%, Top-5: 49.70% Time: 00:00:11
+Epoch [1/100] Batch [12/16] Loss: 2.3365 Top-1: 7.07%, Top-5: 49.61% Time: 00:00:12
+Epoch [1/100] Batch [13/16] Loss: 2.3363 Top-1: 7.06%, Top-5: 49.62% Time: 00:00:12
+Epoch [1/100] Batch [14/16] Loss: 2.3365 Top-1: 7.02%, Top-5: 49.59% Time: 00:00:13
+Epoch [1/100] Batch [15/16] Loss: 2.3363 Top-1: 7.06%, Top-5: 49.70% Time: 00:00:14
+Epoch [1/100] Batch [16/16] Loss: 2.3361 Top-1: 7.07%, Top-5: 49.76% Time: 00:00:15
+Train Loss: 2.3361, Top-1: 7.07%, Top-5: 49.76%
+Val Loss: 2.3170, Top-1: 9.54%, Top-5: 45.75%
+Saved best model with accuracy: 9.54%
+
+Epoch: 2/100, LR: 0.000200
+Epoch [2/100] Batch [1/16] Loss: 2.3367 Top-1: 6.61%, Top-5: 48.93% Time: 00:00:03
+Epoch [2/100] Batch [2/16] Loss: 2.2995 Top-1: 11.72%, Top-5: 56.14% Time: 00:00:04
+Epoch [2/100] Batch [3/16] Loss: 2.2680 Top-1: 15.26%, Top-5: 62.16% Time: 00:00:05
+Epoch [2/100] Batch [4/16] Loss: 2.2438 Top-1: 17.64%, Top-5: 65.22% Time: 00:00:05
+Epoch [2/100] Batch [5/16] Loss: 2.2202 Top-1: 19.38%, Top-5: 67.40% Time: 00:00:06
+Epoch [2/100] Batch [6/16] Loss: 2.2029 Top-1: 20.35%, Top-5: 68.83% Time: 00:00:07
+Epoch [2/100] Batch [7/16] Loss: 2.1851 Top-1: 21.27%, Top-5: 70.12% Time: 00:00:08
+Epoch [2/100] Batch [8/16] Loss: 2.1732 Top-1: 21.94%, Top-5: 71.07% Time: 00:00:09
+Epoch [2/100] Batch [9/16] Loss: 2.1613 Top-1: 22.59%, Top-5: 72.00% Time: 00:00:09
+Epoch [2/100] Batch [10/16] Loss: 2.1492 Top-1: 23.19%, Top-5: 72.94% Time: 00:00:10
+Epoch [2/100] Batch [11/16] Loss: 2.1377 Top-1: 23.79%, Top-5: 73.80% Time: 00:00:11
+Epoch [2/100] Batch [12/16] Loss: 2.1264 Top-1: 24.35%, Top-5: 74.51% Time: 00:00:12
+Epoch [2/100] Batch [13/16] Loss: 2.1167 Top-1: 24.78%, Top-5: 75.14% Time: 00:00:13
+Epoch [2/100] Batch [14/16] Loss: 2.1063 Top-1: 25.33%, Top-5: 75.76% Time: 00:00:14
+Epoch [2/100] Batch [15/16] Loss: 2.0967 Top-1: 25.87%, Top-5: 76.24% Time: 00:00:14
+Epoch [2/100] Batch [16/16] Loss: 2.0872 Top-1: 26.43%, Top-5: 76.78% Time: 00:00:15
+Train Loss: 2.0872, Top-1: 26.43%, Top-5: 76.78%
+Val Loss: 1.9641, Top-1: 31.40%, Top-5: 84.46%
+Saved best model with accuracy: 31.40%
+
+Epoch: 3/100, LR: 0.000400
+Epoch [3/100] Batch [1/16] Loss: 1.9560 Top-1: 33.63%, Top-5: 83.95% Time: 00:00:01
+Epoch [3/100] Batch [2/16] Loss: 1.9421 Top-1: 33.25%, Top-5: 85.04% Time: 00:00:02
+Epoch [3/100] Batch [3/16] Loss: 1.9270 Top-1: 33.58%, Top-5: 85.50% Time: 00:00:03
+Epoch [3/100] Batch [4/16] Loss: 1.9119 Top-1: 34.04%, Top-5: 86.03% Time: 00:00:04
+Epoch [3/100] Batch [5/16] Loss: 1.8950 Top-1: 35.05%, Top-5: 86.55% Time: 00:00:05
+Epoch [3/100] Batch [6/16] Loss: 1.8809 Top-1: 35.43%, Top-5: 87.00% Time: 00:00:06
+Epoch [3/100] Batch [7/16] Loss: 1.8647 Top-1: 36.05%, Top-5: 87.39% Time: 00:00:06
+Epoch [3/100] Batch [8/16] Loss: 1.8538 Top-1: 36.54%, Top-5: 87.54% Time: 00:00:07
+Epoch [3/100] Batch [9/16] Loss: 1.8434 Top-1: 36.77%, Top-5: 87.87% Time: 00:00:08
+Epoch [3/100] Batch [10/16] Loss: 1.8324 Top-1: 37.38%, Top-5: 88.12% Time: 00:00:09
+Epoch [3/100] Batch [11/16] Loss: 1.8223 Top-1: 37.90%, Top-5: 88.38% Time: 00:00:10
+Epoch [3/100] Batch [12/16] Loss: 1.8121 Top-1: 38.37%, Top-5: 88.66% Time: 00:00:11
+Epoch [3/100] Batch [13/16] Loss: 1.8018 Top-1: 38.96%, Top-5: 88.92% Time: 00:00:11
+Epoch [3/100] Batch [14/16] Loss: 1.7930 Top-1: 39.41%, Top-5: 89.10% Time: 00:00:12
+Epoch [3/100] Batch [15/16] Loss: 1.7842 Top-1: 39.84%, Top-5: 89.29% Time: 00:00:13
+Epoch [3/100] Batch [16/16] Loss: 1.7748 Top-1: 40.36%, Top-5: 89.49% Time: 00:00:14
+Train Loss: 1.7748, Top-1: 40.36%, Top-5: 89.49%
+Val Loss: 1.7032, Top-1: 44.97%, Top-5: 91.68%
+Saved best model with accuracy: 44.97%
+
+Epoch: 4/100, LR: 0.000600
+Epoch [4/100] Batch [1/16] Loss: 1.7061 Top-1: 44.53%, Top-5: 92.12% Time: 00:00:02
+Epoch [4/100] Batch [2/16] Loss: 1.7328 Top-1: 43.60%, Top-5: 90.92% Time: 00:00:02
+Epoch [4/100] Batch [3/16] Loss: 1.7246 Top-1: 42.89%, Top-5: 91.28% Time: 00:00:03
+Epoch [4/100] Batch [4/16] Loss: 1.6994 Top-1: 44.40%, Top-5: 91.48% Time: 00:00:04
+Epoch [4/100] Batch [5/16] Loss: 1.6960 Top-1: 44.39%, Top-5: 91.69% Time: 00:00:05
+Epoch [4/100] Batch [6/16] Loss: 1.6783 Top-1: 45.20%, Top-5: 92.10% Time: 00:00:06
+Epoch [4/100] Batch [7/16] Loss: 1.6696 Top-1: 45.57%, Top-5: 92.12% Time: 00:00:07
+Epoch [4/100] Batch [8/16] Loss: 1.6625 Top-1: 45.76%, Top-5: 92.22% Time: 00:00:07
+Epoch [4/100] Batch [9/16] Loss: 1.6561 Top-1: 46.34%, Top-5: 92.20% Time: 00:00:08
+Epoch [4/100] Batch [10/16] Loss: 1.6482 Top-1: 46.70%, Top-5: 92.31% Time: 00:00:09
+Epoch [4/100] Batch [11/16] Loss: 1.6390 Top-1: 47.19%, Top-5: 92.47% Time: 00:00:10
+Epoch [4/100] Batch [12/16] Loss: 1.6325 Top-1: 47.52%, Top-5: 92.62% Time: 00:00:11
+Epoch [4/100] Batch [13/16] Loss: 1.6252 Top-1: 47.86%, Top-5: 92.73% Time: 00:00:12
+Epoch [4/100] Batch [14/16] Loss: 1.6178 Top-1: 48.26%, Top-5: 92.85% Time: 00:00:12
+Epoch [4/100] Batch [15/16] Loss: 1.6098 Top-1: 48.68%, Top-5: 92.97% Time: 00:00:13
+Epoch [4/100] Batch [16/16] Loss: 1.6016 Top-1: 49.03%, Top-5: 93.05% Time: 00:00:14
+Train Loss: 1.6016, Top-1: 49.03%, Top-5: 93.05%
+Val Loss: 1.7065, Top-1: 50.12%, Top-5: 92.36%
+Saved best model with accuracy: 50.12%
+
+Epoch: 5/100, LR: 0.000800
+Epoch [5/100] Batch [1/16] Loss: 1.5145 Top-1: 53.45%, Top-5: 94.63% Time: 00:00:01
+Epoch [5/100] Batch [2/16] Loss: 1.5145 Top-1: 53.52%, Top-5: 94.73% Time: 00:00:02
+Epoch [5/100] Batch [3/16] Loss: 1.5013 Top-1: 53.94%, Top-5: 94.94% Time: 00:00:03
+Epoch [5/100] Batch [4/16] Loss: 1.4906 Top-1: 54.57%, Top-5: 95.06% Time: 00:00:04
+Epoch [5/100] Batch [5/16] Loss: 1.4893 Top-1: 54.47%, Top-5: 95.25% Time: 00:00:05
+Epoch [5/100] Batch [6/16] Loss: 1.4826 Top-1: 54.67%, Top-5: 95.31% Time: 00:00:05
+Epoch [5/100] Batch [7/16] Loss: 1.4754 Top-1: 54.83%, Top-5: 95.34% Time: 00:00:06
+Epoch [5/100] Batch [8/16] Loss: 1.4700 Top-1: 55.19%, Top-5: 95.32% Time: 00:00:07
+Epoch [5/100] Batch [9/16] Loss: 1.4662 Top-1: 55.51%, Top-5: 95.30% Time: 00:00:08
+Epoch [5/100] Batch [10/16] Loss: 1.4595 Top-1: 55.84%, Top-5: 95.35% Time: 00:00:09
+Epoch [5/100] Batch [11/16] Loss: 1.4560 Top-1: 55.98%, Top-5: 95.40% Time: 00:00:10
+Epoch [5/100] Batch [12/16] Loss: 1.4493 Top-1: 56.38%, Top-5: 95.47% Time: 00:00:10
+Epoch [5/100] Batch [13/16] Loss: 1.4462 Top-1: 56.62%, Top-5: 95.45% Time: 00:00:11
+Epoch [5/100] Batch [14/16] Loss: 1.4410 Top-1: 56.95%, Top-5: 95.45% Time: 00:00:12
+Epoch [5/100] Batch [15/16] Loss: 1.4357 Top-1: 57.22%, Top-5: 95.49% Time: 00:00:13
+Epoch [5/100] Batch [16/16] Loss: 1.4290 Top-1: 57.52%, Top-5: 95.54% Time: 00:00:14
+Train Loss: 1.4290, Top-1: 57.52%, Top-5: 95.54%
+Val Loss: 1.4931, Top-1: 56.27%, Top-5: 94.97%
+Saved best model with accuracy: 56.27%
+
+Epoch: 6/100, LR: 0.001000
+Epoch [6/100] Batch [1/16] Loss: 1.3479 Top-1: 62.30%, Top-5: 95.87% Time: 00:00:01
+Epoch [6/100] Batch [2/16] Loss: 1.3504 Top-1: 62.22%, Top-5: 96.19% Time: 00:00:02
+Epoch [6/100] Batch [3/16] Loss: 1.3533 Top-1: 62.10%, Top-5: 96.29% Time: 00:00:03
+Epoch [6/100] Batch [4/16] Loss: 1.3523 Top-1: 61.97%, Top-5: 96.13% Time: 00:00:04
+Epoch [6/100] Batch [5/16] Loss: 1.3515 Top-1: 61.99%, Top-5: 96.09% Time: 00:00:05
+Epoch [6/100] Batch [6/16] Loss: 1.3453 Top-1: 62.20%, Top-5: 96.18% Time: 00:00:06
+Epoch [6/100] Batch [7/16] Loss: 1.3410 Top-1: 62.46%, Top-5: 96.21% Time: 00:00:06
+Epoch [6/100] Batch [8/16] Loss: 1.3349 Top-1: 62.72%, Top-5: 96.27% Time: 00:00:07
+Epoch [6/100] Batch [9/16] Loss: 1.3305 Top-1: 62.88%, Top-5: 96.29% Time: 00:00:08
+Epoch [6/100] Batch [10/16] Loss: 1.3285 Top-1: 62.84%, Top-5: 96.37% Time: 00:00:09
+Epoch [6/100] Batch [11/16] Loss: 1.3238 Top-1: 63.06%, Top-5: 96.41% Time: 00:00:10
+Epoch [6/100] Batch [12/16] Loss: 1.3205 Top-1: 63.21%, Top-5: 96.44% Time: 00:00:11
+Epoch [6/100] Batch [13/16] Loss: 1.3174 Top-1: 63.38%, Top-5: 96.47% Time: 00:00:11
+Epoch [6/100] Batch [14/16] Loss: 1.3141 Top-1: 63.51%, Top-5: 96.52% Time: 00:00:12
+Epoch [6/100] Batch [15/16] Loss: 1.3106 Top-1: 63.65%, Top-5: 96.55% Time: 00:00:13
+Epoch [6/100] Batch [16/16] Loss: 1.3067 Top-1: 63.80%, Top-5: 96.61% Time: 00:00:14
+Train Loss: 1.3067, Top-1: 63.80%, Top-5: 96.61%
+Val Loss: 1.3851, Top-1: 61.24%, Top-5: 95.31%
+Saved best model with accuracy: 61.24%
+
+Epoch: 7/100, LR: 0.001000
+Epoch [7/100] Batch [1/16] Loss: 1.2448 Top-1: 66.63%, Top-5: 97.10% Time: 00:00:01
+Epoch [7/100] Batch [2/16] Loss: 1.2237 Top-1: 67.74%, Top-5: 97.38% Time: 00:00:02
+Epoch [7/100] Batch [3/16] Loss: 1.2250 Top-1: 67.62%, Top-5: 97.33% Time: 00:00:03
+Epoch [7/100] Batch [4/16] Loss: 1.2219 Top-1: 67.58%, Top-5: 97.31% Time: 00:00:04
+Epoch [7/100] Batch [5/16] Loss: 1.2224 Top-1: 67.66%, Top-5: 97.26% Time: 00:00:05
+Epoch [7/100] Batch [6/16] Loss: 1.2190 Top-1: 67.95%, Top-5: 97.26% Time: 00:00:06
+Epoch [7/100] Batch [7/16] Loss: 1.2182 Top-1: 68.01%, Top-5: 97.21% Time: 00:00:06
+Epoch [7/100] Batch [8/16] Loss: 1.2160 Top-1: 68.23%, Top-5: 97.21% Time: 00:00:07
+Epoch [7/100] Batch [9/16] Loss: 1.2138 Top-1: 68.18%, Top-5: 97.29% Time: 00:00:08
+Epoch [7/100] Batch [10/16] Loss: 1.2147 Top-1: 68.20%, Top-5: 97.29% Time: 00:00:09
+Epoch [7/100] Batch [11/16] Loss: 1.2113 Top-1: 68.38%, Top-5: 97.36% Time: 00:00:10
+Epoch [7/100] Batch [12/16] Loss: 1.2111 Top-1: 68.41%, Top-5: 97.31% Time: 00:00:11
+Epoch [7/100] Batch [13/16] Loss: 1.2092 Top-1: 68.52%, Top-5: 97.37% Time: 00:00:11
+Epoch [7/100] Batch [14/16] Loss: 1.2087 Top-1: 68.50%, Top-5: 97.37% Time: 00:00:12
+Epoch [7/100] Batch [15/16] Loss: 1.2082 Top-1: 68.54%, Top-5: 97.34% Time: 00:00:13
+Epoch [7/100] Batch [16/16] Loss: 1.2045 Top-1: 68.67%, Top-5: 97.39% Time: 00:00:14
+Train Loss: 1.2045, Top-1: 68.67%, Top-5: 97.39%
+Val Loss: 1.3917, Top-1: 62.15%, Top-5: 95.76%
+Saved best model with accuracy: 62.15%
+
+Epoch: 8/100, LR: 0.000999
+Epoch [8/100] Batch [1/16] Loss: 1.1437 Top-1: 71.13%, Top-5: 97.85% Time: 00:00:02
+Epoch [8/100] Batch [2/16] Loss: 1.1330 Top-1: 72.02%, Top-5: 97.98% Time: 00:00:03
+Epoch [8/100] Batch [3/16] Loss: 1.1382 Top-1: 71.64%, Top-5: 98.01% Time: 00:00:03
+Epoch [8/100] Batch [4/16] Loss: 1.1316 Top-1: 72.14%, Top-5: 97.98% Time: 00:00:04
+Epoch [8/100] Batch [5/16] Loss: 1.1285 Top-1: 72.27%, Top-5: 97.96% Time: 00:00:05
+Epoch [8/100] Batch [6/16] Loss: 1.1290 Top-1: 72.38%, Top-5: 97.89% Time: 00:00:06
+Epoch [8/100] Batch [7/16] Loss: 1.1267 Top-1: 72.56%, Top-5: 97.88% Time: 00:00:07
+Epoch [8/100] Batch [8/16] Loss: 1.1263 Top-1: 72.48%, Top-5: 97.90% Time: 00:00:07
+Epoch [8/100] Batch [9/16] Loss: 1.1252 Top-1: 72.43%, Top-5: 97.95% Time: 00:00:08
+Epoch [8/100] Batch [10/16] Loss: 1.1220 Top-1: 72.62%, Top-5: 97.93% Time: 00:00:09
+Epoch [8/100] Batch [11/16] Loss: 1.1196 Top-1: 72.78%, Top-5: 97.96% Time: 00:00:10
+Epoch [8/100] Batch [12/16] Loss: 1.1187 Top-1: 72.76%, Top-5: 97.99% Time: 00:00:11
+Epoch [8/100] Batch [13/16] Loss: 1.1160 Top-1: 72.85%, Top-5: 98.04% Time: 00:00:12
+Epoch [8/100] Batch [14/16] Loss: 1.1161 Top-1: 72.86%, Top-5: 98.03% Time: 00:00:12
+Epoch [8/100] Batch [15/16] Loss: 1.1156 Top-1: 72.87%, Top-5: 98.01% Time: 00:00:13
+Epoch [8/100] Batch [16/16] Loss: 1.1140 Top-1: 72.91%, Top-5: 98.05% Time: 00:00:14
+Train Loss: 1.1140, Top-1: 72.91%, Top-5: 98.05%
+Val Loss: 1.2411, Top-1: 68.66%, Top-5: 96.94%
+Saved best model with accuracy: 68.66%
+
+Epoch: 9/100, LR: 0.000998
+Epoch [9/100] Batch [1/16] Loss: 1.0579 Top-1: 74.90%, Top-5: 98.37% Time: 00:00:01
+Epoch [9/100] Batch [2/16] Loss: 1.0490 Top-1: 75.73%, Top-5: 98.42% Time: 00:00:02
+Epoch [9/100] Batch [3/16] Loss: 1.0512 Top-1: 75.93%, Top-5: 98.38% Time: 00:00:03
+Epoch [9/100] Batch [4/16] Loss: 1.0513 Top-1: 76.12%, Top-5: 98.35% Time: 00:00:04
+Epoch [9/100] Batch [5/16] Loss: 1.0489 Top-1: 76.06%, Top-5: 98.40% Time: 00:00:05
+Epoch [9/100] Batch [6/16] Loss: 1.0421 Top-1: 76.30%, Top-5: 98.43% Time: 00:00:06
+Epoch [9/100] Batch [7/16] Loss: 1.0428 Top-1: 76.21%, Top-5: 98.42% Time: 00:00:06
+Epoch [9/100] Batch [8/16] Loss: 1.0403 Top-1: 76.25%, Top-5: 98.44% Time: 00:00:07
+Epoch [9/100] Batch [9/16] Loss: 1.0402 Top-1: 76.22%, Top-5: 98.47% Time: 00:00:08
+Epoch [9/100] Batch [10/16] Loss: 1.0366 Top-1: 76.36%, Top-5: 98.51% Time: 00:00:09
+Epoch [9/100] Batch [11/16] Loss: 1.0366 Top-1: 76.41%, Top-5: 98.49% Time: 00:00:10
+Epoch [9/100] Batch [12/16] Loss: 1.0359 Top-1: 76.44%, Top-5: 98.54% Time: 00:00:11
+Epoch [9/100] Batch [13/16] Loss: 1.0365 Top-1: 76.42%, Top-5: 98.49% Time: 00:00:11
+Epoch [9/100] Batch [14/16] Loss: 1.0355 Top-1: 76.45%, Top-5: 98.51% Time: 00:00:12
+Epoch [9/100] Batch [15/16] Loss: 1.0349 Top-1: 76.45%, Top-5: 98.53% Time: 00:00:13
+Epoch [9/100] Batch [16/16] Loss: 1.0331 Top-1: 76.54%, Top-5: 98.53% Time: 00:00:14
+Train Loss: 1.0331, Top-1: 76.54%, Top-5: 98.53%
+Val Loss: 1.1427, Top-1: 72.33%, Top-5: 97.22%
+Saved best model with accuracy: 72.33%
+
+Epoch: 10/100, LR: 0.000996
+Epoch [10/100] Batch [1/16] Loss: 1.0159 Top-1: 77.80%, Top-5: 98.63% Time: 00:00:02
+Epoch [10/100] Batch [2/16] Loss: 1.0036 Top-1: 78.45%, Top-5: 98.78% Time: 00:00:02
+Epoch [10/100] Batch [3/16] Loss: 0.9957 Top-1: 78.85%, Top-5: 98.84% Time: 00:00:03
+Epoch [10/100] Batch [4/16] Loss: 0.9877 Top-1: 78.98%, Top-5: 98.88% Time: 00:00:04
+Epoch [10/100] Batch [5/16] Loss: 0.9850 Top-1: 79.03%, Top-5: 98.85% Time: 00:00:05
+Epoch [10/100] Batch [6/16] Loss: 0.9823 Top-1: 79.13%, Top-5: 98.82% Time: 00:00:06
+Epoch [10/100] Batch [7/16] Loss: 0.9825 Top-1: 79.13%, Top-5: 98.81% Time: 00:00:07
+Epoch [10/100] Batch [8/16] Loss: 0.9792 Top-1: 79.30%, Top-5: 98.86% Time: 00:00:07
+Epoch [10/100] Batch [9/16] Loss: 0.9788 Top-1: 79.34%, Top-5: 98.82% Time: 00:00:08
+Epoch [10/100] Batch [10/16] Loss: 0.9744 Top-1: 79.51%, Top-5: 98.85% Time: 00:00:09
+Epoch [10/100] Batch [11/16] Loss: 0.9726 Top-1: 79.57%, Top-5: 98.86% Time: 00:00:10
+Epoch [10/100] Batch [12/16] Loss: 0.9708 Top-1: 79.64%, Top-5: 98.88% Time: 00:00:11
+Epoch [10/100] Batch [13/16] Loss: 0.9710 Top-1: 79.66%, Top-5: 98.89% Time: 00:00:12
+Epoch [10/100] Batch [14/16] Loss: 0.9736 Top-1: 79.53%, Top-5: 98.87% Time: 00:00:12
+Epoch [10/100] Batch [15/16] Loss: 0.9721 Top-1: 79.61%, Top-5: 98.88% Time: 00:00:13
+Epoch [10/100] Batch [16/16] Loss: 0.9721 Top-1: 79.61%, Top-5: 98.89% Time: 00:00:14
+Train Loss: 0.9721, Top-1: 79.61%, Top-5: 98.89%
+Val Loss: 1.1270, Top-1: 73.60%, Top-5: 97.63%
+Saved best model with accuracy: 73.60%
+
+Epoch: 11/100, LR: 0.000993
+Epoch [11/100] Batch [1/16] Loss: 0.9489 Top-1: 80.50%, Top-5: 98.93% Time: 00:00:02
+Epoch [11/100] Batch [2/16] Loss: 0.9369 Top-1: 81.14%, Top-5: 99.12% Time: 00:00:02
+Epoch [11/100] Batch [3/16] Loss: 0.9393 Top-1: 81.34%, Top-5: 99.12% Time: 00:00:03
+Epoch [11/100] Batch [4/16] Loss: 0.9378 Top-1: 81.12%, Top-5: 99.18% Time: 00:00:04
+Epoch [11/100] Batch [5/16] Loss: 0.9339 Top-1: 81.46%, Top-5: 99.21% Time: 00:00:05
+Epoch [11/100] Batch [6/16] Loss: 0.9296 Top-1: 81.71%, Top-5: 99.19% Time: 00:00:06
+Epoch [11/100] Batch [7/16] Loss: 0.9255 Top-1: 81.79%, Top-5: 99.20% Time: 00:00:07
+Epoch [11/100] Batch [8/16] Loss: 0.9296 Top-1: 81.60%, Top-5: 99.14% Time: 00:00:07
+Epoch [11/100] Batch [9/16] Loss: 0.9317 Top-1: 81.41%, Top-5: 99.12% Time: 00:00:08
+Epoch [11/100] Batch [10/16] Loss: 0.9289 Top-1: 81.58%, Top-5: 99.12% Time: 00:00:09
+Epoch [11/100] Batch [11/16] Loss: 0.9285 Top-1: 81.54%, Top-5: 99.13% Time: 00:00:10
+Epoch [11/100] Batch [12/16] Loss: 0.9264 Top-1: 81.60%, Top-5: 99.12% Time: 00:00:11
+Epoch [11/100] Batch [13/16] Loss: 0.9252 Top-1: 81.61%, Top-5: 99.13% Time: 00:00:12
+Epoch [11/100] Batch [14/16] Loss: 0.9239 Top-1: 81.65%, Top-5: 99.12% Time: 00:00:12
+Epoch [11/100] Batch [15/16] Loss: 0.9225 Top-1: 81.67%, Top-5: 99.13% Time: 00:00:13
+Epoch [11/100] Batch [16/16] Loss: 0.9205 Top-1: 81.75%, Top-5: 99.14% Time: 00:00:14
+Train Loss: 0.9205, Top-1: 81.75%, Top-5: 99.14%
+Val Loss: 0.9569, Top-1: 80.67%, Top-5: 98.96%
+Saved best model with accuracy: 80.67%
+
+Epoch: 12/100, LR: 0.000990
+Epoch [12/100] Batch [1/16] Loss: 0.8622 Top-1: 84.80%, Top-5: 99.54% Time: 00:00:02
+Epoch [12/100] Batch [2/16] Loss: 0.8673 Top-1: 84.13%, Top-5: 99.33% Time: 00:00:03
+Epoch [12/100] Batch [3/16] Loss: 0.8655 Top-1: 84.33%, Top-5: 99.35% Time: 00:00:03
+Epoch [12/100] Batch [4/16] Loss: 0.8709 Top-1: 84.12%, Top-5: 99.28% Time: 00:00:04
+Epoch [12/100] Batch [5/16] Loss: 0.8700 Top-1: 84.14%, Top-5: 99.23% Time: 00:00:05
+Epoch [12/100] Batch [6/16] Loss: 0.8697 Top-1: 84.06%, Top-5: 99.21% Time: 00:00:06
+Epoch [12/100] Batch [7/16] Loss: 0.8711 Top-1: 83.92%, Top-5: 99.21% Time: 00:00:07
+Epoch [12/100] Batch [8/16] Loss: 0.8697 Top-1: 84.08%, Top-5: 99.20% Time: 00:00:08
+Epoch [12/100] Batch [9/16] Loss: 0.8687 Top-1: 84.19%, Top-5: 99.20% Time: 00:00:08
+Epoch [12/100] Batch [10/16] Loss: 0.8683 Top-1: 84.21%, Top-5: 99.19% Time: 00:00:09
+Epoch [12/100] Batch [11/16] Loss: 0.8662 Top-1: 84.25%, Top-5: 99.21% Time: 00:00:10
+Epoch [12/100] Batch [12/16] Loss: 0.8652 Top-1: 84.33%, Top-5: 99.21% Time: 00:00:11
+Epoch [12/100] Batch [13/16] Loss: 0.8639 Top-1: 84.39%, Top-5: 99.21% Time: 00:00:12
+Epoch [12/100] Batch [14/16] Loss: 0.8628 Top-1: 84.47%, Top-5: 99.22% Time: 00:00:13
+Epoch [12/100] Batch [15/16] Loss: 0.8615 Top-1: 84.53%, Top-5: 99.24% Time: 00:00:13
+Epoch [12/100] Batch [16/16] Loss: 0.8618 Top-1: 84.54%, Top-5: 99.25% Time: 00:00:14
+Train Loss: 0.8618, Top-1: 84.54%, Top-5: 99.25%
+Val Loss: 1.0177, Top-1: 78.55%, Top-5: 98.60%
+
+Epoch: 13/100, LR: 0.000987
+Epoch [13/100] Batch [1/16] Loss: 0.8560 Top-1: 85.29%, Top-5: 99.45% Time: 00:00:01
+Epoch [13/100] Batch [2/16] Loss: 0.8443 Top-1: 85.35%, Top-5: 99.50% Time: 00:00:02
+Epoch [13/100] Batch [3/16] Loss: 0.8396 Top-1: 85.45%, Top-5: 99.51% Time: 00:00:03
+Epoch [13/100] Batch [4/16] Loss: 0.8372 Top-1: 85.59%, Top-5: 99.50% Time: 00:00:04
+Epoch [13/100] Batch [5/16] Loss: 0.8352 Top-1: 85.76%, Top-5: 99.46% Time: 00:00:05
+Epoch [13/100] Batch [6/16] Loss: 0.8331 Top-1: 85.98%, Top-5: 99.45% Time: 00:00:06
+Epoch [13/100] Batch [7/16] Loss: 0.8322 Top-1: 86.00%, Top-5: 99.45% Time: 00:00:06
+Epoch [13/100] Batch [8/16] Loss: 0.8312 Top-1: 86.04%, Top-5: 99.43% Time: 00:00:07
+Epoch [13/100] Batch [9/16] Loss: 0.8312 Top-1: 85.97%, Top-5: 99.43% Time: 00:00:08
+Epoch [13/100] Batch [10/16] Loss: 0.8326 Top-1: 85.88%, Top-5: 99.43% Time: 00:00:09
+Epoch [13/100] Batch [11/16] Loss: 0.8305 Top-1: 86.01%, Top-5: 99.42% Time: 00:00:10
+Epoch [13/100] Batch [12/16] Loss: 0.8285 Top-1: 86.06%, Top-5: 99.41% Time: 00:00:11
+Epoch [13/100] Batch [13/16] Loss: 0.8299 Top-1: 86.03%, Top-5: 99.42% Time: 00:00:12
+Epoch [13/100] Batch [14/16] Loss: 0.8295 Top-1: 86.05%, Top-5: 99.41% Time: 00:00:12
+Epoch [13/100] Batch [15/16] Loss: 0.8294 Top-1: 86.03%, Top-5: 99.38% Time: 00:00:13
+Epoch [13/100] Batch [16/16] Loss: 0.8292 Top-1: 86.00%, Top-5: 99.38% Time: 00:00:14
+Train Loss: 0.8292, Top-1: 86.00%, Top-5: 99.38%
+Val Loss: 0.9282, Top-1: 81.85%, Top-5: 98.80%
+Saved best model with accuracy: 81.85%
+
+Epoch: 14/100, LR: 0.000983
+Epoch [14/100] Batch [1/16] Loss: 0.8218 Top-1: 86.04%, Top-5: 99.51% Time: 00:00:02
+Epoch [14/100] Batch [2/16] Loss: 0.8116 Top-1: 86.60%, Top-5: 99.37% Time: 00:00:02
+Epoch [14/100] Batch [3/16] Loss: 0.8077 Top-1: 86.79%, Top-5: 99.36% Time: 00:00:03
+Epoch [14/100] Batch [4/16] Loss: 0.8039 Top-1: 86.90%, Top-5: 99.35% Time: 00:00:04
+Epoch [14/100] Batch [5/16] Loss: 0.8060 Top-1: 86.72%, Top-5: 99.38% Time: 00:00:05
+Epoch [14/100] Batch [6/16] Loss: 0.8043 Top-1: 86.86%, Top-5: 99.39% Time: 00:00:06
+Epoch [14/100] Batch [7/16] Loss: 0.8064 Top-1: 86.78%, Top-5: 99.42% Time: 00:00:07
+Epoch [14/100] Batch [8/16] Loss: 0.8054 Top-1: 86.90%, Top-5: 99.42% Time: 00:00:07
+Epoch [14/100] Batch [9/16] Loss: 0.8065 Top-1: 86.89%, Top-5: 99.42% Time: 00:00:08
+Epoch [14/100] Batch [10/16] Loss: 0.8069 Top-1: 86.87%, Top-5: 99.44% Time: 00:00:09
+Epoch [14/100] Batch [11/16] Loss: 0.8065 Top-1: 86.90%, Top-5: 99.45% Time: 00:00:10
+Epoch [14/100] Batch [12/16] Loss: 0.8052 Top-1: 86.95%, Top-5: 99.45% Time: 00:00:11
+Epoch [14/100] Batch [13/16] Loss: 0.8056 Top-1: 86.90%, Top-5: 99.45% Time: 00:00:12
+Epoch [14/100] Batch [14/16] Loss: 0.8045 Top-1: 86.90%, Top-5: 99.45% Time: 00:00:12
+Epoch [14/100] Batch [15/16] Loss: 0.8038 Top-1: 86.93%, Top-5: 99.46% Time: 00:00:13
+Epoch [14/100] Batch [16/16] Loss: 0.8040 Top-1: 86.93%, Top-5: 99.46% Time: 00:00:14
+Train Loss: 0.8040, Top-1: 86.93%, Top-5: 99.46%
+Val Loss: 0.9424, Top-1: 81.37%, Top-5: 98.84%
+
+Epoch: 15/100, LR: 0.000978
+Epoch [15/100] Batch [1/16] Loss: 0.7900 Top-1: 87.99%, Top-5: 99.45% Time: 00:00:01
+Epoch [15/100] Batch [2/16] Loss: 0.7928 Top-1: 88.02%, Top-5: 99.48% Time: 00:00:02
+Epoch [15/100] Batch [3/16] Loss: 0.7898 Top-1: 88.11%, Top-5: 99.42% Time: 00:00:03
+Epoch [15/100] Batch [4/16] Loss: 0.7854 Top-1: 88.23%, Top-5: 99.41% Time: 00:00:04
+Epoch [15/100] Batch [5/16] Loss: 0.7847 Top-1: 88.33%, Top-5: 99.41% Time: 00:00:05
+Epoch [15/100] Batch [6/16] Loss: 0.7812 Top-1: 88.35%, Top-5: 99.45% Time: 00:00:06
+Epoch [15/100] Batch [7/16] Loss: 0.7774 Top-1: 88.52%, Top-5: 99.48% Time: 00:00:06
+Epoch [15/100] Batch [8/16] Loss: 0.7757 Top-1: 88.58%, Top-5: 99.49% Time: 00:00:07
+Epoch [15/100] Batch [9/16] Loss: 0.7752 Top-1: 88.60%, Top-5: 99.52% Time: 00:00:08
+Epoch [15/100] Batch [10/16] Loss: 0.7759 Top-1: 88.54%, Top-5: 99.50% Time: 00:00:09
+Epoch [15/100] Batch [11/16] Loss: 0.7759 Top-1: 88.49%, Top-5: 99.52% Time: 00:00:10
+Epoch [15/100] Batch [12/16] Loss: 0.7757 Top-1: 88.49%, Top-5: 99.53% Time: 00:00:11
+Epoch [15/100] Batch [13/16] Loss: 0.7746 Top-1: 88.52%, Top-5: 99.53% Time: 00:00:11
+Epoch [15/100] Batch [14/16] Loss: 0.7749 Top-1: 88.45%, Top-5: 99.54% Time: 00:00:12
+Epoch [15/100] Batch [15/16] Loss: 0.7746 Top-1: 88.46%, Top-5: 99.54% Time: 00:00:13
+Epoch [15/100] Batch [16/16] Loss: 0.7744 Top-1: 88.44%, Top-5: 99.53% Time: 00:00:14
+Train Loss: 0.7744, Top-1: 88.44%, Top-5: 99.53%
+Val Loss: 0.9016, Top-1: 83.18%, Top-5: 98.93%
+Saved best model with accuracy: 83.18%
+
+Epoch: 16/100, LR: 0.000973
+Epoch [16/100] Batch [1/16] Loss: 0.7580 Top-1: 88.70%, Top-5: 99.67% Time: 00:00:02
+Epoch [16/100] Batch [2/16] Loss: 0.7512 Top-1: 89.14%, Top-5: 99.64% Time: 00:00:02
+Epoch [16/100] Batch [3/16] Loss: 0.7440 Top-1: 89.68%, Top-5: 99.67% Time: 00:00:03
+Epoch [16/100] Batch [4/16] Loss: 0.7463 Top-1: 89.61%, Top-5: 99.63% Time: 00:00:04
+Epoch [16/100] Batch [5/16] Loss: 0.7445 Top-1: 89.68%, Top-5: 99.65% Time: 00:00:05
+Epoch [16/100] Batch [6/16] Loss: 0.7457 Top-1: 89.62%, Top-5: 99.64% Time: 00:00:06
+Epoch [16/100] Batch [7/16] Loss: 0.7473 Top-1: 89.59%, Top-5: 99.61% Time: 00:00:07
+Epoch [16/100] Batch [8/16] Loss: 0.7469 Top-1: 89.60%, Top-5: 99.63% Time: 00:00:07
+Epoch [16/100] Batch [9/16] Loss: 0.7461 Top-1: 89.57%, Top-5: 99.63% Time: 00:00:08
+Epoch [16/100] Batch [10/16] Loss: 0.7475 Top-1: 89.52%, Top-5: 99.61% Time: 00:00:09
+Epoch [16/100] Batch [11/16] Loss: 0.7481 Top-1: 89.51%, Top-5: 99.62% Time: 00:00:10
+Epoch [16/100] Batch [12/16] Loss: 0.7481 Top-1: 89.54%, Top-5: 99.61% Time: 00:00:11
+Epoch [16/100] Batch [13/16] Loss: 0.7482 Top-1: 89.50%, Top-5: 99.63% Time: 00:00:12
+Epoch [16/100] Batch [14/16] Loss: 0.7487 Top-1: 89.49%, Top-5: 99.61% Time: 00:00:12
+Epoch [16/100] Batch [15/16] Loss: 0.7485 Top-1: 89.49%, Top-5: 99.61% Time: 00:00:13
+Epoch [16/100] Batch [16/16] Loss: 0.7488 Top-1: 89.48%, Top-5: 99.60% Time: 00:00:14
+Train Loss: 0.7488, Top-1: 89.48%, Top-5: 99.60%
+Val Loss: 0.8785, Top-1: 84.18%, Top-5: 99.06%
+Saved best model with accuracy: 84.18%
+
+Epoch: 17/100, LR: 0.000967
+Epoch [17/100] Batch [1/16] Loss: 0.7398 Top-1: 90.69%, Top-5: 99.54% Time: 00:00:02
+Epoch [17/100] Batch [2/16] Loss: 0.7309 Top-1: 90.62%, Top-5: 99.63% Time: 00:00:02
+Epoch [17/100] Batch [3/16] Loss: 0.7309 Top-1: 90.58%, Top-5: 99.63% Time: 00:00:03
+Epoch [17/100] Batch [4/16] Loss: 0.7334 Top-1: 90.41%, Top-5: 99.60% Time: 00:00:04
+Epoch [17/100] Batch [5/16] Loss: 0.7349 Top-1: 90.26%, Top-5: 99.61% Time: 00:00:05
+Epoch [17/100] Batch [6/16] Loss: 0.7370 Top-1: 90.16%, Top-5: 99.59% Time: 00:00:06
+Epoch [17/100] Batch [7/16] Loss: 0.7346 Top-1: 90.16%, Top-5: 99.63% Time: 00:00:07
+Epoch [17/100] Batch [8/16] Loss: 0.7342 Top-1: 90.14%, Top-5: 99.63% Time: 00:00:07
+Epoch [17/100] Batch [9/16] Loss: 0.7356 Top-1: 90.01%, Top-5: 99.66% Time: 00:00:08
+Epoch [17/100] Batch [10/16] Loss: 0.7358 Top-1: 90.01%, Top-5: 99.66% Time: 00:00:09
+Epoch [17/100] Batch [11/16] Loss: 0.7361 Top-1: 90.02%, Top-5: 99.67% Time: 00:00:10
+Epoch [17/100] Batch [12/16] Loss: 0.7351 Top-1: 90.04%, Top-5: 99.66% Time: 00:00:11
+Epoch [17/100] Batch [13/16] Loss: 0.7352 Top-1: 90.05%, Top-5: 99.65% Time: 00:00:12
+Epoch [17/100] Batch [14/16] Loss: 0.7343 Top-1: 90.10%, Top-5: 99.66% Time: 00:00:12
+Epoch [17/100] Batch [15/16] Loss: 0.7339 Top-1: 90.11%, Top-5: 99.66% Time: 00:00:13
+Epoch [17/100] Batch [16/16] Loss: 0.7341 Top-1: 90.09%, Top-5: 99.67% Time: 00:00:14
+Train Loss: 0.7341, Top-1: 90.09%, Top-5: 99.67%
+Val Loss: 0.8544, Top-1: 85.23%, Top-5: 99.17%
+Saved best model with accuracy: 85.23%
+
+Epoch: 18/100, LR: 0.000961
+Epoch [18/100] Batch [1/16] Loss: 0.7056 Top-1: 91.11%, Top-5: 99.71% Time: 00:00:01
+Epoch [18/100] Batch [2/16] Loss: 0.7155 Top-1: 90.59%, Top-5: 99.74% Time: 00:00:02
+Epoch [18/100] Batch [3/16] Loss: 0.7091 Top-1: 91.02%, Top-5: 99.77% Time: 00:00:03
+Epoch [18/100] Batch [4/16] Loss: 0.7044 Top-1: 91.32%, Top-5: 99.76% Time: 00:00:04
+Epoch [18/100] Batch [5/16] Loss: 0.7076 Top-1: 91.13%, Top-5: 99.73% Time: 00:00:05
+Epoch [18/100] Batch [6/16] Loss: 0.7105 Top-1: 91.03%, Top-5: 99.73% Time: 00:00:06
+Epoch [18/100] Batch [7/16] Loss: 0.7087 Top-1: 91.10%, Top-5: 99.73% Time: 00:00:06
+Epoch [18/100] Batch [8/16] Loss: 0.7079 Top-1: 91.11%, Top-5: 99.73% Time: 00:00:07
+Epoch [18/100] Batch [9/16] Loss: 0.7088 Top-1: 91.07%, Top-5: 99.73% Time: 00:00:08
+Epoch [18/100] Batch [10/16] Loss: 0.7090 Top-1: 91.10%, Top-5: 99.73% Time: 00:00:09
+Epoch [18/100] Batch [11/16] Loss: 0.7100 Top-1: 91.09%, Top-5: 99.73% Time: 00:00:10
+Epoch [18/100] Batch [12/16] Loss: 0.7099 Top-1: 91.09%, Top-5: 99.75% Time: 00:00:11
+Epoch [18/100] Batch [13/16] Loss: 0.7105 Top-1: 91.03%, Top-5: 99.75% Time: 00:00:11
+Epoch [18/100] Batch [14/16] Loss: 0.7098 Top-1: 91.08%, Top-5: 99.75% Time: 00:00:12
+Epoch [18/100] Batch [15/16] Loss: 0.7098 Top-1: 91.08%, Top-5: 99.75% Time: 00:00:13
+Epoch [18/100] Batch [16/16] Loss: 0.7100 Top-1: 91.11%, Top-5: 99.74% Time: 00:00:14
+Train Loss: 0.7100, Top-1: 91.11%, Top-5: 99.74%
+Val Loss: 0.8644, Top-1: 84.88%, Top-5: 99.22%
+
+Epoch: 19/100, LR: 0.000955
+Epoch [19/100] Batch [1/16] Loss: 0.6985 Top-1: 92.25%, Top-5: 99.74% Time: 00:00:01
+Epoch [19/100] Batch [2/16] Loss: 0.6933 Top-1: 92.27%, Top-5: 99.84% Time: 00:00:02
+Epoch [19/100] Batch [3/16] Loss: 0.6942 Top-1: 92.14%, Top-5: 99.79% Time: 00:00:03
+Epoch [19/100] Batch [4/16] Loss: 0.6900 Top-1: 92.34%, Top-5: 99.81% Time: 00:00:04
+Epoch [19/100] Batch [5/16] Loss: 0.6933 Top-1: 92.17%, Top-5: 99.81% Time: 00:00:05
+Epoch [19/100] Batch [6/16] Loss: 0.6950 Top-1: 91.97%, Top-5: 99.79% Time: 00:00:06
+Epoch [19/100] Batch [7/16] Loss: 0.6940 Top-1: 91.93%, Top-5: 99.80% Time: 00:00:06
+Epoch [19/100] Batch [8/16] Loss: 0.6948 Top-1: 91.89%, Top-5: 99.77% Time: 00:00:07
+Epoch [19/100] Batch [9/16] Loss: 0.6938 Top-1: 91.94%, Top-5: 99.78% Time: 00:00:08
+Epoch [19/100] Batch [10/16] Loss: 0.6931 Top-1: 91.97%, Top-5: 99.79% Time: 00:00:09
+Epoch [19/100] Batch [11/16] Loss: 0.6923 Top-1: 92.02%, Top-5: 99.80% Time: 00:00:10
+Epoch [19/100] Batch [12/16] Loss: 0.6932 Top-1: 91.98%, Top-5: 99.78% Time: 00:00:11
+Epoch [19/100] Batch [13/16] Loss: 0.6928 Top-1: 92.03%, Top-5: 99.77% Time: 00:00:11
+Epoch [19/100] Batch [14/16] Loss: 0.6934 Top-1: 92.00%, Top-5: 99.78% Time: 00:00:12
+Epoch [19/100] Batch [15/16] Loss: 0.6933 Top-1: 91.97%, Top-5: 99.77% Time: 00:00:13
+Epoch [19/100] Batch [16/16] Loss: 0.6930 Top-1: 92.00%, Top-5: 99.78% Time: 00:00:14
+Train Loss: 0.6930, Top-1: 92.00%, Top-5: 99.78%
+Val Loss: 0.8569, Top-1: 85.39%, Top-5: 99.10%
+Saved best model with accuracy: 85.39%
+
+Epoch: 20/100, LR: 0.000947
+Epoch [20/100] Batch [1/16] Loss: 0.6790 Top-1: 92.09%, Top-5: 99.87% Time: 00:00:02
+Epoch [20/100] Batch [2/16] Loss: 0.6798 Top-1: 92.12%, Top-5: 99.82% Time: 00:00:02
+Epoch [20/100] Batch [3/16] Loss: 0.6763 Top-1: 92.35%, Top-5: 99.83% Time: 00:00:03
+Epoch [20/100] Batch [4/16] Loss: 0.6733 Top-1: 92.58%, Top-5: 99.85% Time: 00:00:04
+Epoch [20/100] Batch [5/16] Loss: 0.6749 Top-1: 92.53%, Top-5: 99.81% Time: 00:00:05
+Epoch [20/100] Batch [6/16] Loss: 0.6706 Top-1: 92.76%, Top-5: 99.82% Time: 00:00:06
+Epoch [20/100] Batch [7/16] Loss: 0.6725 Top-1: 92.64%, Top-5: 99.80% Time: 00:00:06
+Epoch [20/100] Batch [8/16] Loss: 0.6743 Top-1: 92.59%, Top-5: 99.81% Time: 00:00:07
+Epoch [20/100] Batch [9/16] Loss: 0.6741 Top-1: 92.61%, Top-5: 99.82% Time: 00:00:08
+Epoch [20/100] Batch [10/16] Loss: 0.6729 Top-1: 92.68%, Top-5: 99.82% Time: 00:00:09
+Epoch [20/100] Batch [11/16] Loss: 0.6733 Top-1: 92.67%, Top-5: 99.80% Time: 00:00:10
+Epoch [20/100] Batch [12/16] Loss: 0.6745 Top-1: 92.64%, Top-5: 99.79% Time: 00:00:11
+Epoch [20/100] Batch [13/16] Loss: 0.6740 Top-1: 92.67%, Top-5: 99.79% Time: 00:00:12
+Epoch [20/100] Batch [14/16] Loss: 0.6760 Top-1: 92.58%, Top-5: 99.78% Time: 00:00:12
+Epoch [20/100] Batch [15/16] Loss: 0.6761 Top-1: 92.61%, Top-5: 99.78% Time: 00:00:13
+Epoch [20/100] Batch [16/16] Loss: 0.6758 Top-1: 92.65%, Top-5: 99.78% Time: 00:00:14
+Train Loss: 0.6758, Top-1: 92.65%, Top-5: 99.78%
+Val Loss: 0.8720, Top-1: 85.40%, Top-5: 98.96%
+Saved best model with accuracy: 85.40%
+
+Epoch: 21/100, LR: 0.000940
+Epoch [21/100] Batch [1/16] Loss: 0.6673 Top-1: 92.68%, Top-5: 99.97% Time: 00:00:01
+Epoch [21/100] Batch [2/16] Loss: 0.6727 Top-1: 92.66%, Top-5: 99.87% Time: 00:00:02
+Epoch [21/100] Batch [3/16] Loss: 0.6689 Top-1: 92.85%, Top-5: 99.86% Time: 00:00:03
+Epoch [21/100] Batch [4/16] Loss: 0.6702 Top-1: 92.81%, Top-5: 99.85% Time: 00:00:04
+Epoch [21/100] Batch [5/16] Loss: 0.6663 Top-1: 93.01%, Top-5: 99.87% Time: 00:00:05
+Epoch [21/100] Batch [6/16] Loss: 0.6678 Top-1: 92.96%, Top-5: 99.85% Time: 00:00:06
+Epoch [21/100] Batch [7/16] Loss: 0.6670 Top-1: 93.02%, Top-5: 99.85% Time: 00:00:06
+Epoch [21/100] Batch [8/16] Loss: 0.6664 Top-1: 93.06%, Top-5: 99.83% Time: 00:00:07
+Epoch [21/100] Batch [9/16] Loss: 0.6671 Top-1: 93.01%, Top-5: 99.82% Time: 00:00:08
+Epoch [21/100] Batch [10/16] Loss: 0.6671 Top-1: 93.04%, Top-5: 99.82% Time: 00:00:09
+Epoch [21/100] Batch [11/16] Loss: 0.6670 Top-1: 93.05%, Top-5: 99.83% Time: 00:00:10
+Epoch [21/100] Batch [12/16] Loss: 0.6684 Top-1: 92.95%, Top-5: 99.82% Time: 00:00:11
+Epoch [21/100] Batch [13/16] Loss: 0.6690 Top-1: 92.95%, Top-5: 99.83% Time: 00:00:11
+Epoch [21/100] Batch [14/16] Loss: 0.6716 Top-1: 92.86%, Top-5: 99.82% Time: 00:00:12
+Epoch [21/100] Batch [15/16] Loss: 0.6713 Top-1: 92.85%, Top-5: 99.83% Time: 00:00:13
+Epoch [21/100] Batch [16/16] Loss: 0.6716 Top-1: 92.85%, Top-5: 99.82% Time: 00:00:14
+Train Loss: 0.6716, Top-1: 92.85%, Top-5: 99.82%
+Val Loss: 0.8895, Top-1: 84.80%, Top-5: 98.63%
+
+Epoch: 22/100, LR: 0.000932
+Epoch [22/100] Batch [1/16] Loss: 0.6891 Top-1: 91.76%, Top-5: 99.80% Time: 00:00:01
+Epoch [22/100] Batch [2/16] Loss: 0.6711 Top-1: 92.85%, Top-5: 99.79% Time: 00:00:02
+Epoch [22/100] Batch [3/16] Loss: 0.6632 Top-1: 93.16%, Top-5: 99.80% Time: 00:00:03
+Epoch [22/100] Batch [4/16] Loss: 0.6616 Top-1: 93.14%, Top-5: 99.83% Time: 00:00:04
+Epoch [22/100] Batch [5/16] Loss: 0.6596 Top-1: 93.27%, Top-5: 99.83% Time: 00:00:05
+Epoch [22/100] Batch [6/16] Loss: 0.6576 Top-1: 93.47%, Top-5: 99.80% Time: 00:00:06
+Epoch [22/100] Batch [7/16] Loss: 0.6567 Top-1: 93.52%, Top-5: 99.80% Time: 00:00:06
+Epoch [22/100] Batch [8/16] Loss: 0.6558 Top-1: 93.59%, Top-5: 99.80% Time: 00:00:07
+Epoch [22/100] Batch [9/16] Loss: 0.6552 Top-1: 93.63%, Top-5: 99.79% Time: 00:00:08
+Epoch [22/100] Batch [10/16] Loss: 0.6567 Top-1: 93.61%, Top-5: 99.76% Time: 00:00:09
+Epoch [22/100] Batch [11/16] Loss: 0.6571 Top-1: 93.57%, Top-5: 99.77% Time: 00:00:10
+Epoch [22/100] Batch [12/16] Loss: 0.6576 Top-1: 93.52%, Top-5: 99.78% Time: 00:00:11
+Epoch [22/100] Batch [13/16] Loss: 0.6593 Top-1: 93.46%, Top-5: 99.78% Time: 00:00:11
+Epoch [22/100] Batch [14/16] Loss: 0.6593 Top-1: 93.47%, Top-5: 99.78% Time: 00:00:12
+Epoch [22/100] Batch [15/16] Loss: 0.6594 Top-1: 93.45%, Top-5: 99.78% Time: 00:00:13
+Epoch [22/100] Batch [16/16] Loss: 0.6587 Top-1: 93.45%, Top-5: 99.78% Time: 00:00:14
+Train Loss: 0.6587, Top-1: 93.45%, Top-5: 99.78%
+Val Loss: 0.8327, Top-1: 86.65%, Top-5: 99.15%
+Saved best model with accuracy: 86.65%
+
+Epoch: 23/100, LR: 0.000923
+Epoch [23/100] Batch [1/16] Loss: 0.6415 Top-1: 94.34%, Top-5: 99.90% Time: 00:00:02
+Epoch [23/100] Batch [2/16] Loss: 0.6489 Top-1: 94.01%, Top-5: 99.79% Time: 00:00:02
+Epoch [23/100] Batch [3/16] Loss: 0.6485 Top-1: 93.89%, Top-5: 99.85% Time: 00:00:03
+Epoch [23/100] Batch [4/16] Loss: 0.6479 Top-1: 94.01%, Top-5: 99.86% Time: 00:00:04
+Epoch [23/100] Batch [5/16] Loss: 0.6467 Top-1: 94.04%, Top-5: 99.86% Time: 00:00:05
+Epoch [23/100] Batch [6/16] Loss: 0.6442 Top-1: 94.08%, Top-5: 99.88% Time: 00:00:06
+Epoch [23/100] Batch [7/16] Loss: 0.6450 Top-1: 94.02%, Top-5: 99.89% Time: 00:00:07
+Epoch [23/100] Batch [8/16] Loss: 0.6451 Top-1: 94.06%, Top-5: 99.86% Time: 00:00:07
+Epoch [23/100] Batch [9/16] Loss: 0.6449 Top-1: 94.05%, Top-5: 99.85% Time: 00:00:08
+Epoch [23/100] Batch [10/16] Loss: 0.6450 Top-1: 94.09%, Top-5: 99.85% Time: 00:00:09
+Epoch [23/100] Batch [11/16] Loss: 0.6450 Top-1: 94.12%, Top-5: 99.85% Time: 00:00:10
+Epoch [23/100] Batch [12/16] Loss: 0.6450 Top-1: 94.11%, Top-5: 99.85% Time: 00:00:11
+Epoch [23/100] Batch [13/16] Loss: 0.6451 Top-1: 94.13%, Top-5: 99.83% Time: 00:00:12
+Epoch [23/100] Batch [14/16] Loss: 0.6456 Top-1: 94.09%, Top-5: 99.83% Time: 00:00:12
+Epoch [23/100] Batch [15/16] Loss: 0.6462 Top-1: 94.05%, Top-5: 99.83% Time: 00:00:13
+Epoch [23/100] Batch [16/16] Loss: 0.6458 Top-1: 94.06%, Top-5: 99.84% Time: 00:00:14
+Train Loss: 0.6458, Top-1: 94.06%, Top-5: 99.84%
+Val Loss: 0.8603, Top-1: 85.90%, Top-5: 99.13%
+
+Epoch: 24/100, LR: 0.000914
+Epoch [24/100] Batch [1/16] Loss: 0.6287 Top-1: 94.89%, Top-5: 99.87% Time: 00:00:01
+Epoch [24/100] Batch [2/16] Loss: 0.6271 Top-1: 94.99%, Top-5: 99.93% Time: 00:00:02
+Epoch [24/100] Batch [3/16] Loss: 0.6325 Top-1: 94.73%, Top-5: 99.92% Time: 00:00:03
+Epoch [24/100] Batch [4/16] Loss: 0.6297 Top-1: 94.82%, Top-5: 99.91% Time: 00:00:04
+Epoch [24/100] Batch [5/16] Loss: 0.6319 Top-1: 94.62%, Top-5: 99.92% Time: 00:00:05
+Epoch [24/100] Batch [6/16] Loss: 0.6309 Top-1: 94.68%, Top-5: 99.92% Time: 00:00:06
+Epoch [24/100] Batch [7/16] Loss: 0.6306 Top-1: 94.66%, Top-5: 99.92% Time: 00:00:06
+Epoch [24/100] Batch [8/16] Loss: 0.6302 Top-1: 94.73%, Top-5: 99.91% Time: 00:00:07
+Epoch [24/100] Batch [9/16] Loss: 0.6301 Top-1: 94.71%, Top-5: 99.91% Time: 00:00:08
+Epoch [24/100] Batch [10/16] Loss: 0.6306 Top-1: 94.69%, Top-5: 99.91% Time: 00:00:09
+Epoch [24/100] Batch [11/16] Loss: 0.6311 Top-1: 94.64%, Top-5: 99.91% Time: 00:00:10
+Epoch [24/100] Batch [12/16] Loss: 0.6308 Top-1: 94.64%, Top-5: 99.91% Time: 00:00:11
+Epoch [24/100] Batch [13/16] Loss: 0.6309 Top-1: 94.62%, Top-5: 99.90% Time: 00:00:11
+Epoch [24/100] Batch [14/16] Loss: 0.6312 Top-1: 94.62%, Top-5: 99.90% Time: 00:00:12
+Epoch [24/100] Batch [15/16] Loss: 0.6313 Top-1: 94.62%, Top-5: 99.90% Time: 00:00:13
+Epoch [24/100] Batch [16/16] Loss: 0.6315 Top-1: 94.62%, Top-5: 99.89% Time: 00:00:14
+Train Loss: 0.6315, Top-1: 94.62%, Top-5: 99.89%
+Val Loss: 0.8288, Top-1: 86.39%, Top-5: 99.24%
+
+Epoch: 25/100, LR: 0.000905
+Epoch [25/100] Batch [1/16] Loss: 0.6140 Top-1: 95.61%, Top-5: 99.93% Time: 00:00:01
+Epoch [25/100] Batch [2/16] Loss: 0.6154 Top-1: 95.38%, Top-5: 99.90% Time: 00:00:02
+Epoch [25/100] Batch [3/16] Loss: 0.6148 Top-1: 95.38%, Top-5: 99.88% Time: 00:00:03
+Epoch [25/100] Batch [4/16] Loss: 0.6152 Top-1: 95.29%, Top-5: 99.89% Time: 00:00:04
+Epoch [25/100] Batch [5/16] Loss: 0.6155 Top-1: 95.29%, Top-5: 99.87% Time: 00:00:05
+Epoch [25/100] Batch [6/16] Loss: 0.6168 Top-1: 95.25%, Top-5: 99.87% Time: 00:00:06
+Epoch [25/100] Batch [7/16] Loss: 0.6179 Top-1: 95.21%, Top-5: 99.87% Time: 00:00:06
+Epoch [25/100] Batch [8/16] Loss: 0.6173 Top-1: 95.23%, Top-5: 99.88% Time: 00:00:07
+Epoch [25/100] Batch [9/16] Loss: 0.6170 Top-1: 95.22%, Top-5: 99.89% Time: 00:00:08
+Epoch [25/100] Batch [10/16] Loss: 0.6170 Top-1: 95.18%, Top-5: 99.89% Time: 00:00:09
+Epoch [25/100] Batch [11/16] Loss: 0.6165 Top-1: 95.22%, Top-5: 99.90% Time: 00:00:10
+Epoch [25/100] Batch [12/16] Loss: 0.6159 Top-1: 95.23%, Top-5: 99.89% Time: 00:00:11
+Epoch [25/100] Batch [13/16] Loss: 0.6180 Top-1: 95.13%, Top-5: 99.89% Time: 00:00:11
+Epoch [25/100] Batch [14/16] Loss: 0.6187 Top-1: 95.08%, Top-5: 99.89% Time: 00:00:12
+Epoch [25/100] Batch [15/16] Loss: 0.6198 Top-1: 95.04%, Top-5: 99.89% Time: 00:00:13
+Epoch [25/100] Batch [16/16] Loss: 0.6208 Top-1: 94.98%, Top-5: 99.89% Time: 00:00:14
+Train Loss: 0.6208, Top-1: 94.98%, Top-5: 99.89%
+Val Loss: 0.8269, Top-1: 86.63%, Top-5: 99.08%
+
+Epoch: 26/100, LR: 0.000895
+Epoch [26/100] Batch [1/16] Loss: 0.6099 Top-1: 95.83%, Top-5: 99.84% Time: 00:00:02
+Epoch [26/100] Batch [2/16] Loss: 0.6047 Top-1: 95.88%, Top-5: 99.85% Time: 00:00:02
+Epoch [26/100] Batch [3/16] Loss: 0.6027 Top-1: 96.02%, Top-5: 99.88% Time: 00:00:03
+Epoch [26/100] Batch [4/16] Loss: 0.6056 Top-1: 95.84%, Top-5: 99.89% Time: 00:00:04
+Epoch [26/100] Batch [5/16] Loss: 0.6057 Top-1: 95.79%, Top-5: 99.88% Time: 00:00:05
+Epoch [26/100] Batch [6/16] Loss: 0.6069 Top-1: 95.67%, Top-5: 99.88% Time: 00:00:06
+Epoch [26/100] Batch [7/16] Loss: 0.6068 Top-1: 95.66%, Top-5: 99.89% Time: 00:00:07
+Epoch [26/100] Batch [8/16] Loss: 0.6078 Top-1: 95.60%, Top-5: 99.90% Time: 00:00:07
+Epoch [26/100] Batch [9/16] Loss: 0.6082 Top-1: 95.55%, Top-5: 99.91% Time: 00:00:08
+Epoch [26/100] Batch [10/16] Loss: 0.6075 Top-1: 95.61%, Top-5: 99.91% Time: 00:00:09
+Epoch [26/100] Batch [11/16] Loss: 0.6076 Top-1: 95.61%, Top-5: 99.91% Time: 00:00:10
+Epoch [26/100] Batch [12/16] Loss: 0.6081 Top-1: 95.60%, Top-5: 99.91% Time: 00:00:11
+Epoch [26/100] Batch [13/16] Loss: 0.6079 Top-1: 95.63%, Top-5: 99.91% Time: 00:00:12
+Epoch [26/100] Batch [14/16] Loss: 0.6076 Top-1: 95.63%, Top-5: 99.91% Time: 00:00:12
+Epoch [26/100] Batch [15/16] Loss: 0.6072 Top-1: 95.63%, Top-5: 99.91% Time: 00:00:13
+Epoch [26/100] Batch [16/16] Loss: 0.6082 Top-1: 95.59%, Top-5: 99.91% Time: 00:00:14
+Train Loss: 0.6082, Top-1: 95.59%, Top-5: 99.91%
+Val Loss: 0.8106, Top-1: 87.78%, Top-5: 99.26%
+Saved best model with accuracy: 87.78%
+
+Epoch: 27/100, LR: 0.000884
+Epoch [27/100] Batch [1/16] Loss: 0.5867 Top-1: 96.42%, Top-5: 99.93% Time: 00:00:01
+Epoch [27/100] Batch [2/16] Loss: 0.5888 Top-1: 96.42%, Top-5: 99.95% Time: 00:00:02
+Epoch [27/100] Batch [3/16] Loss: 0.5937 Top-1: 96.12%, Top-5: 99.96% Time: 00:00:03
+Epoch [27/100] Batch [4/16] Loss: 0.5933 Top-1: 96.15%, Top-5: 99.96% Time: 00:00:04
+Epoch [27/100] Batch [5/16] Loss: 0.5940 Top-1: 96.18%, Top-5: 99.95% Time: 00:00:05
+Epoch [27/100] Batch [6/16] Loss: 0.5983 Top-1: 95.96%, Top-5: 99.95% Time: 00:00:05
+Epoch [27/100] Batch [7/16] Loss: 0.5961 Top-1: 96.09%, Top-5: 99.95% Time: 00:00:06
+Epoch [27/100] Batch [8/16] Loss: 0.5946 Top-1: 96.20%, Top-5: 99.95% Time: 00:00:07
+Epoch [27/100] Batch [9/16] Loss: 0.5933 Top-1: 96.22%, Top-5: 99.95% Time: 00:00:08
+Epoch [27/100] Batch [10/16] Loss: 0.5943 Top-1: 96.18%, Top-5: 99.94% Time: 00:00:09
+Epoch [27/100] Batch [11/16] Loss: 0.5942 Top-1: 96.19%, Top-5: 99.94% Time: 00:00:10
+Epoch [27/100] Batch [12/16] Loss: 0.5946 Top-1: 96.17%, Top-5: 99.94% Time: 00:00:10
+Epoch [27/100] Batch [13/16] Loss: 0.5963 Top-1: 96.09%, Top-5: 99.93% Time: 00:00:11
+Epoch [27/100] Batch [14/16] Loss: 0.5973 Top-1: 96.01%, Top-5: 99.93% Time: 00:00:12
+Epoch [27/100] Batch [15/16] Loss: 0.5979 Top-1: 95.96%, Top-5: 99.93% Time: 00:00:13
+Epoch [27/100] Batch [16/16] Loss: 0.5990 Top-1: 95.92%, Top-5: 99.93% Time: 00:00:14
+Train Loss: 0.5990, Top-1: 95.92%, Top-5: 99.93%
+Val Loss: 0.8029, Top-1: 88.25%, Top-5: 98.86%
+Saved best model with accuracy: 88.25%
+
+Epoch: 28/100, LR: 0.000873
+Epoch [28/100] Batch [1/16] Loss: 0.5942 Top-1: 96.09%, Top-5: 99.97% Time: 00:00:01
+Epoch [28/100] Batch [2/16] Loss: 0.5899 Top-1: 96.27%, Top-5: 99.95% Time: 00:00:02
+Epoch [28/100] Batch [3/16] Loss: 0.5920 Top-1: 96.09%, Top-5: 99.97% Time: 00:00:03
+Epoch [28/100] Batch [4/16] Loss: 0.5939 Top-1: 96.04%, Top-5: 99.97% Time: 00:00:04
+Epoch [28/100] Batch [5/16] Loss: 0.5947 Top-1: 95.98%, Top-5: 99.97% Time: 00:00:05
+Epoch [28/100] Batch [6/16] Loss: 0.5962 Top-1: 95.95%, Top-5: 99.96% Time: 00:00:06
+Epoch [28/100] Batch [7/16] Loss: 0.5940 Top-1: 96.07%, Top-5: 99.97% Time: 00:00:06
+Epoch [28/100] Batch [8/16] Loss: 0.5949 Top-1: 96.07%, Top-5: 99.95% Time: 00:00:07
+Epoch [28/100] Batch [9/16] Loss: 0.5963 Top-1: 96.00%, Top-5: 99.93% Time: 00:00:08
+Epoch [28/100] Batch [10/16] Loss: 0.5968 Top-1: 95.99%, Top-5: 99.93% Time: 00:00:09
+Epoch [28/100] Batch [11/16] Loss: 0.5975 Top-1: 95.97%, Top-5: 99.94% Time: 00:00:10
+Epoch [28/100] Batch [12/16] Loss: 0.5972 Top-1: 95.97%, Top-5: 99.94% Time: 00:00:11
+Epoch [28/100] Batch [13/16] Loss: 0.5976 Top-1: 95.98%, Top-5: 99.93% Time: 00:00:11
+Epoch [28/100] Batch [14/16] Loss: 0.5990 Top-1: 95.93%, Top-5: 99.93% Time: 00:00:12
+Epoch [28/100] Batch [15/16] Loss: 0.5986 Top-1: 95.95%, Top-5: 99.93% Time: 00:00:13
+Epoch [28/100] Batch [16/16] Loss: 0.5985 Top-1: 95.95%, Top-5: 99.93% Time: 00:00:14
+Train Loss: 0.5985, Top-1: 95.95%, Top-5: 99.93%
+Val Loss: 0.7991, Top-1: 88.30%, Top-5: 99.22%
+Saved best model with accuracy: 88.30%
+
+Epoch: 29/100, LR: 0.000862
+Epoch [29/100] Batch [1/16] Loss: 0.5892 Top-1: 96.42%, Top-5: 99.93% Time: 00:00:01
+Epoch [29/100] Batch [2/16] Loss: 0.5838 Top-1: 96.68%, Top-5: 99.93% Time: 00:00:02
+Epoch [29/100] Batch [3/16] Loss: 0.5879 Top-1: 96.45%, Top-5: 99.93% Time: 00:00:03
+Epoch [29/100] Batch [4/16] Loss: 0.5900 Top-1: 96.37%, Top-5: 99.93% Time: 00:00:04
+Epoch [29/100] Batch [5/16] Loss: 0.5876 Top-1: 96.53%, Top-5: 99.94% Time: 00:00:05
+Epoch [29/100] Batch [6/16] Loss: 0.5874 Top-1: 96.51%, Top-5: 99.95% Time: 00:00:06
+Epoch [29/100] Batch [7/16] Loss: 0.5872 Top-1: 96.48%, Top-5: 99.95% Time: 00:00:06
+Epoch [29/100] Batch [8/16] Loss: 0.5868 Top-1: 96.51%, Top-5: 99.96% Time: 00:00:07
+Epoch [29/100] Batch [9/16] Loss: 0.5864 Top-1: 96.48%, Top-5: 99.96% Time: 00:00:08
+Epoch [29/100] Batch [10/16] Loss: 0.5862 Top-1: 96.49%, Top-5: 99.96% Time: 00:00:09
+Epoch [29/100] Batch [11/16] Loss: 0.5858 Top-1: 96.54%, Top-5: 99.96% Time: 00:00:10
+Epoch [29/100] Batch [12/16] Loss: 0.5870 Top-1: 96.46%, Top-5: 99.96% Time: 00:00:11
+Epoch [29/100] Batch [13/16] Loss: 0.5877 Top-1: 96.40%, Top-5: 99.96% Time: 00:00:11
+Epoch [29/100] Batch [14/16] Loss: 0.5887 Top-1: 96.35%, Top-5: 99.95% Time: 00:00:12
+Epoch [29/100] Batch [15/16] Loss: 0.5889 Top-1: 96.34%, Top-5: 99.95% Time: 00:00:13
+Epoch [29/100] Batch [16/16] Loss: 0.5892 Top-1: 96.32%, Top-5: 99.95% Time: 00:00:14
+Train Loss: 0.5892, Top-1: 96.32%, Top-5: 99.95%
+Val Loss: 0.8219, Top-1: 87.61%, Top-5: 98.99%
+
+Epoch: 30/100, LR: 0.000851
+Epoch [30/100] Batch [1/16] Loss: 0.5718 Top-1: 97.17%, Top-5: 99.97% Time: 00:00:02
+Epoch [30/100] Batch [2/16] Loss: 0.5819 Top-1: 96.73%, Top-5: 99.93% Time: 00:00:02
+Epoch [30/100] Batch [3/16] Loss: 0.5806 Top-1: 96.78%, Top-5: 99.96% Time: 00:00:03
+Epoch [30/100] Batch [4/16] Loss: 0.5817 Top-1: 96.63%, Top-5: 99.95% Time: 00:00:04
+Epoch [30/100] Batch [5/16] Loss: 0.5825 Top-1: 96.59%, Top-5: 99.95% Time: 00:00:05
+Epoch [30/100] Batch [6/16] Loss: 0.5829 Top-1: 96.59%, Top-5: 99.95% Time: 00:00:06
+Epoch [30/100] Batch [7/16] Loss: 0.5834 Top-1: 96.54%, Top-5: 99.95% Time: 00:00:07
+Epoch [30/100] Batch [8/16] Loss: 0.5820 Top-1: 96.59%, Top-5: 99.96% Time: 00:00:07
+Epoch [30/100] Batch [9/16] Loss: 0.5822 Top-1: 96.57%, Top-5: 99.95% Time: 00:00:08
+Epoch [30/100] Batch [10/16] Loss: 0.5826 Top-1: 96.57%, Top-5: 99.95% Time: 00:00:09
+Epoch [30/100] Batch [11/16] Loss: 0.5834 Top-1: 96.56%, Top-5: 99.95% Time: 00:00:10
+Epoch [30/100] Batch [12/16] Loss: 0.5837 Top-1: 96.56%, Top-5: 99.94% Time: 00:00:11
+Epoch [30/100] Batch [13/16] Loss: 0.5835 Top-1: 96.57%, Top-5: 99.94% Time: 00:00:12
+Epoch [30/100] Batch [14/16] Loss: 0.5831 Top-1: 96.59%, Top-5: 99.94% Time: 00:00:12
+Epoch [30/100] Batch [15/16] Loss: 0.5828 Top-1: 96.62%, Top-5: 99.94% Time: 00:00:13
+Epoch [30/100] Batch [16/16] Loss: 0.5833 Top-1: 96.59%, Top-5: 99.94% Time: 00:00:14
+Train Loss: 0.5833, Top-1: 96.59%, Top-5: 99.94%
+Val Loss: 0.8102, Top-1: 87.88%, Top-5: 98.91%
+
+Epoch: 31/100, LR: 0.000839
+Epoch [31/100] Batch [1/16] Loss: 0.5599 Top-1: 97.79%, Top-5: 99.97% Time: 00:00:01
+Epoch [31/100] Batch [2/16] Loss: 0.5631 Top-1: 97.64%, Top-5: 99.98% Time: 00:00:02
+Epoch [31/100] Batch [3/16] Loss: 0.5673 Top-1: 97.49%, Top-5: 99.99% Time: 00:00:03
+Epoch [31/100] Batch [4/16] Loss: 0.5694 Top-1: 97.43%, Top-5: 99.98% Time: 00:00:04
+Epoch [31/100] Batch [5/16] Loss: 0.5682 Top-1: 97.43%, Top-5: 99.97% Time: 00:00:05
+Epoch [31/100] Batch [6/16] Loss: 0.5698 Top-1: 97.27%, Top-5: 99.97% Time: 00:00:06
+Epoch [31/100] Batch [7/16] Loss: 0.5702 Top-1: 97.26%, Top-5: 99.98% Time: 00:00:06
+Epoch [31/100] Batch [8/16] Loss: 0.5715 Top-1: 97.18%, Top-5: 99.98% Time: 00:00:07
+Epoch [31/100] Batch [9/16] Loss: 0.5715 Top-1: 97.18%, Top-5: 99.97% Time: 00:00:08
+Epoch [31/100] Batch [10/16] Loss: 0.5719 Top-1: 97.12%, Top-5: 99.97% Time: 00:00:09
+Epoch [31/100] Batch [11/16] Loss: 0.5723 Top-1: 97.10%, Top-5: 99.97% Time: 00:00:10
+Epoch [31/100] Batch [12/16] Loss: 0.5716 Top-1: 97.12%, Top-5: 99.97% Time: 00:00:11
+Epoch [31/100] Batch [13/16] Loss: 0.5711 Top-1: 97.12%, Top-5: 99.97% Time: 00:00:11
+Epoch [31/100] Batch [14/16] Loss: 0.5716 Top-1: 97.11%, Top-5: 99.97% Time: 00:00:12
+Epoch [31/100] Batch [15/16] Loss: 0.5723 Top-1: 97.09%, Top-5: 99.97% Time: 00:00:13
+Epoch [31/100] Batch [16/16] Loss: 0.5723 Top-1: 97.09%, Top-5: 99.97% Time: 00:00:14
+Train Loss: 0.5723, Top-1: 97.09%, Top-5: 99.97%
+Val Loss: 0.8066, Top-1: 88.12%, Top-5: 98.96%
+
+Epoch: 32/100, LR: 0.000826
+Epoch [32/100] Batch [1/16] Loss: 0.5640 Top-1: 97.53%, Top-5: 99.97% Time: 00:00:01
+Epoch [32/100] Batch [2/16] Loss: 0.5602 Top-1: 97.48%, Top-5: 99.98% Time: 00:00:02
+Epoch [32/100] Batch [3/16] Loss: 0.5672 Top-1: 97.24%, Top-5: 99.97% Time: 00:00:03
+Epoch [32/100] Batch [4/16] Loss: 0.5673 Top-1: 97.29%, Top-5: 99.97% Time: 00:00:04
+Epoch [32/100] Batch [5/16] Loss: 0.5683 Top-1: 97.25%, Top-5: 99.97% Time: 00:00:05
+Epoch [32/100] Batch [6/16] Loss: 0.5688 Top-1: 97.25%, Top-5: 99.96% Time: 00:00:06
+Epoch [32/100] Batch [7/16] Loss: 0.5688 Top-1: 97.23%, Top-5: 99.97% Time: 00:00:06
+Epoch [32/100] Batch [8/16] Loss: 0.5686 Top-1: 97.27%, Top-5: 99.96% Time: 00:00:07
+Epoch [32/100] Batch [9/16] Loss: 0.5691 Top-1: 97.23%, Top-5: 99.96% Time: 00:00:08
+Epoch [32/100] Batch [10/16] Loss: 0.5694 Top-1: 97.21%, Top-5: 99.96% Time: 00:00:09
+Epoch [32/100] Batch [11/16] Loss: 0.5705 Top-1: 97.18%, Top-5: 99.96% Time: 00:00:10
+Epoch [32/100] Batch [12/16] Loss: 0.5712 Top-1: 97.18%, Top-5: 99.96% Time: 00:00:11
+Epoch [32/100] Batch [13/16] Loss: 0.5714 Top-1: 97.18%, Top-5: 99.96% Time: 00:00:11
+Epoch [32/100] Batch [14/16] Loss: 0.5716 Top-1: 97.17%, Top-5: 99.96% Time: 00:00:12
+Epoch [32/100] Batch [15/16] Loss: 0.5717 Top-1: 97.17%, Top-5: 99.96% Time: 00:00:13
+Epoch [32/100] Batch [16/16] Loss: 0.5716 Top-1: 97.18%, Top-5: 99.96% Time: 00:00:14
+Train Loss: 0.5716, Top-1: 97.18%, Top-5: 99.96%
+Val Loss: 0.8036, Top-1: 88.34%, Top-5: 99.18%
+Saved best model with accuracy: 88.34%
+
+Epoch: 33/100, LR: 0.000814
+Epoch [33/100] Batch [1/16] Loss: 0.5652 Top-1: 97.43%, Top-5: 100.00% Time: 00:00:02
+Epoch [33/100] Batch [2/16] Loss: 0.5667 Top-1: 97.30%, Top-5: 99.98% Time: 00:00:02
+Epoch [33/100] Batch [3/16] Loss: 0.5685 Top-1: 97.31%, Top-5: 99.98% Time: 00:00:03
+Epoch [33/100] Batch [4/16] Loss: 0.5669 Top-1: 97.42%, Top-5: 99.98% Time: 00:00:04
+Epoch [33/100] Batch [5/16] Loss: 0.5667 Top-1: 97.40%, Top-5: 99.98% Time: 00:00:05
+Epoch [33/100] Batch [6/16] Loss: 0.5676 Top-1: 97.35%, Top-5: 99.98% Time: 00:00:06
+Epoch [33/100] Batch [7/16] Loss: 0.5690 Top-1: 97.28%, Top-5: 99.98% Time: 00:00:07
+Epoch [33/100] Batch [8/16] Loss: 0.5691 Top-1: 97.25%, Top-5: 99.97% Time: 00:00:07
+Epoch [33/100] Batch [9/16] Loss: 0.5681 Top-1: 97.28%, Top-5: 99.97% Time: 00:00:08
+Epoch [33/100] Batch [10/16] Loss: 0.5682 Top-1: 97.25%, Top-5: 99.96% Time: 00:00:09
+Epoch [33/100] Batch [11/16] Loss: 0.5686 Top-1: 97.24%, Top-5: 99.96% Time: 00:00:10
+Epoch [33/100] Batch [12/16] Loss: 0.5683 Top-1: 97.25%, Top-5: 99.96% Time: 00:00:11
+Epoch [33/100] Batch [13/16] Loss: 0.5690 Top-1: 97.22%, Top-5: 99.96% Time: 00:00:12
+Epoch [33/100] Batch [14/16] Loss: 0.5700 Top-1: 97.18%, Top-5: 99.97% Time: 00:00:12
+Epoch [33/100] Batch [15/16] Loss: 0.5691 Top-1: 97.23%, Top-5: 99.97% Time: 00:00:13
+Epoch [33/100] Batch [16/16] Loss: 0.5692 Top-1: 97.22%, Top-5: 99.97% Time: 00:00:14
+Train Loss: 0.5692, Top-1: 97.22%, Top-5: 99.97%
+Val Loss: 0.8553, Top-1: 87.18%, Top-5: 98.75%
+
+Epoch: 34/100, LR: 0.000801
+Epoch [34/100] Batch [1/16] Loss: 0.5759 Top-1: 97.10%, Top-5: 99.97% Time: 00:00:01
+Epoch [34/100] Batch [2/16] Loss: 0.5682 Top-1: 97.28%, Top-5: 99.98% Time: 00:00:02
+Epoch [34/100] Batch [3/16] Loss: 0.5675 Top-1: 97.24%, Top-5: 99.99% Time: 00:00:03
+Epoch [34/100] Batch [4/16] Loss: 0.5661 Top-1: 97.31%, Top-5: 99.98% Time: 00:00:04
+Epoch [34/100] Batch [5/16] Loss: 0.5647 Top-1: 97.40%, Top-5: 99.97% Time: 00:00:05
+Epoch [34/100] Batch [6/16] Loss: 0.5658 Top-1: 97.36%, Top-5: 99.97% Time: 00:00:06
+Epoch [34/100] Batch [7/16] Loss: 0.5657 Top-1: 97.38%, Top-5: 99.96% Time: 00:00:06
+Epoch [34/100] Batch [8/16] Loss: 0.5654 Top-1: 97.39%, Top-5: 99.96% Time: 00:00:07
+Epoch [34/100] Batch [9/16] Loss: 0.5661 Top-1: 97.36%, Top-5: 99.97% Time: 00:00:08
+Epoch [34/100] Batch [10/16] Loss: 0.5658 Top-1: 97.39%, Top-5: 99.97% Time: 00:00:09
+Epoch [34/100] Batch [11/16] Loss: 0.5652 Top-1: 97.43%, Top-5: 99.97% Time: 00:00:10
+Epoch [34/100] Batch [12/16] Loss: 0.5652 Top-1: 97.44%, Top-5: 99.97% Time: 00:00:11
+Epoch [34/100] Batch [13/16] Loss: 0.5653 Top-1: 97.44%, Top-5: 99.97% Time: 00:00:11
+Epoch [34/100] Batch [14/16] Loss: 0.5663 Top-1: 97.40%, Top-5: 99.97% Time: 00:00:12
+Epoch [34/100] Batch [15/16] Loss: 0.5658 Top-1: 97.43%, Top-5: 99.97% Time: 00:00:13
+Epoch [34/100] Batch [16/16] Loss: 0.5658 Top-1: 97.43%, Top-5: 99.97% Time: 00:00:14
+Train Loss: 0.5658, Top-1: 97.43%, Top-5: 99.97%
+Val Loss: 0.8243, Top-1: 87.70%, Top-5: 99.03%
+
+Epoch: 35/100, LR: 0.000787
+Epoch [35/100] Batch [1/16] Loss: 0.5605 Top-1: 97.53%, Top-5: 100.00% Time: 00:00:01
+Epoch [35/100] Batch [2/16] Loss: 0.5562 Top-1: 97.74%, Top-5: 100.00% Time: 00:00:02
+Epoch [35/100] Batch [3/16] Loss: 0.5601 Top-1: 97.60%, Top-5: 99.99% Time: 00:00:03
+Epoch [35/100] Batch [4/16] Loss: 0.5584 Top-1: 97.69%, Top-5: 99.98% Time: 00:00:04
+Epoch [35/100] Batch [5/16] Loss: 0.5611 Top-1: 97.52%, Top-5: 99.99% Time: 00:00:05
+Epoch [35/100] Batch [6/16] Loss: 0.5609 Top-1: 97.55%, Top-5: 99.99% Time: 00:00:06
+Epoch [35/100] Batch [7/16] Loss: 0.5617 Top-1: 97.57%, Top-5: 99.99% Time: 00:00:06
+Epoch [35/100] Batch [8/16] Loss: 0.5616 Top-1: 97.60%, Top-5: 99.98% Time: 00:00:07
+Epoch [35/100] Batch [9/16] Loss: 0.5624 Top-1: 97.55%, Top-5: 99.98% Time: 00:00:08
+Epoch [35/100] Batch [10/16] Loss: 0.5632 Top-1: 97.52%, Top-5: 99.97% Time: 00:00:09
+Epoch [35/100] Batch [11/16] Loss: 0.5634 Top-1: 97.51%, Top-5: 99.97% Time: 00:00:10
+Epoch [35/100] Batch [12/16] Loss: 0.5641 Top-1: 97.49%, Top-5: 99.97% Time: 00:00:11
+Epoch [35/100] Batch [13/16] Loss: 0.5640 Top-1: 97.46%, Top-5: 99.97% Time: 00:00:11
+Epoch [35/100] Batch [14/16] Loss: 0.5643 Top-1: 97.48%, Top-5: 99.97% Time: 00:00:12
+Epoch [35/100] Batch [15/16] Loss: 0.5641 Top-1: 97.48%, Top-5: 99.97% Time: 00:00:13
+Epoch [35/100] Batch [16/16] Loss: 0.5643 Top-1: 97.49%, Top-5: 99.97% Time: 00:00:14
+Train Loss: 0.5643, Top-1: 97.49%, Top-5: 99.97%
+Val Loss: 0.8022, Top-1: 88.73%, Top-5: 98.94%
+Saved best model with accuracy: 88.73%
+
+Epoch: 36/100, LR: 0.000773
+Epoch [36/100] Batch [1/16] Loss: 0.5456 Top-1: 98.27%, Top-5: 99.97% Time: 00:00:01
+Epoch [36/100] Batch [2/16] Loss: 0.5500 Top-1: 98.08%, Top-5: 99.98% Time: 00:00:02
+Epoch [36/100] Batch [3/16] Loss: 0.5516 Top-1: 98.07%, Top-5: 99.98% Time: 00:00:03
+Epoch [36/100] Batch [4/16] Loss: 0.5517 Top-1: 98.02%, Top-5: 99.98% Time: 00:00:04
+Epoch [36/100] Batch [5/16] Loss: 0.5509 Top-1: 98.10%, Top-5: 99.99% Time: 00:00:05
+Epoch [36/100] Batch [6/16] Loss: 0.5510 Top-1: 98.06%, Top-5: 99.99% Time: 00:00:06
+Epoch [36/100] Batch [7/16] Loss: 0.5501 Top-1: 98.12%, Top-5: 99.99% Time: 00:00:06
+Epoch [36/100] Batch [8/16] Loss: 0.5507 Top-1: 98.09%, Top-5: 99.99% Time: 00:00:07
+Epoch [36/100] Batch [9/16] Loss: 0.5512 Top-1: 98.05%, Top-5: 99.99% Time: 00:00:08
+Epoch [36/100] Batch [10/16] Loss: 0.5519 Top-1: 98.00%, Top-5: 99.99% Time: 00:00:09
+Epoch [36/100] Batch [11/16] Loss: 0.5523 Top-1: 97.99%, Top-5: 99.99% Time: 00:00:10
+Epoch [36/100] Batch [12/16] Loss: 0.5529 Top-1: 97.96%, Top-5: 99.99% Time: 00:00:11
+Epoch [36/100] Batch [13/16] Loss: 0.5530 Top-1: 97.96%, Top-5: 99.98% Time: 00:00:11
+Epoch [36/100] Batch [14/16] Loss: 0.5540 Top-1: 97.93%, Top-5: 99.98% Time: 00:00:12
+Epoch [36/100] Batch [15/16] Loss: 0.5543 Top-1: 97.91%, Top-5: 99.98% Time: 00:00:13
+Epoch [36/100] Batch [16/16] Loss: 0.5540 Top-1: 97.91%, Top-5: 99.98% Time: 00:00:14
+Train Loss: 0.5540, Top-1: 97.91%, Top-5: 99.98%
+Val Loss: 0.8086, Top-1: 88.52%, Top-5: 98.80%
+
+Epoch: 37/100, LR: 0.000759
+Epoch [37/100] Batch [1/16] Loss: 0.5459 Top-1: 98.27%, Top-5: 100.00% Time: 00:00:01
+Epoch [37/100] Batch [2/16] Loss: 0.5480 Top-1: 98.18%, Top-5: 100.00% Time: 00:00:02
+Epoch [37/100] Batch [3/16] Loss: 0.5454 Top-1: 98.35%, Top-5: 100.00% Time: 00:00:03
+Epoch [37/100] Batch [4/16] Loss: 0.5442 Top-1: 98.45%, Top-5: 100.00% Time: 00:00:04
+Epoch [37/100] Batch [5/16] Loss: 0.5440 Top-1: 98.43%, Top-5: 100.00% Time: 00:00:05
+Epoch [37/100] Batch [6/16] Loss: 0.5443 Top-1: 98.42%, Top-5: 99.99% Time: 00:00:06
+Epoch [37/100] Batch [7/16] Loss: 0.5452 Top-1: 98.39%, Top-5: 99.99% Time: 00:00:06
+Epoch [37/100] Batch [8/16] Loss: 0.5448 Top-1: 98.39%, Top-5: 99.99% Time: 00:00:07
+Epoch [37/100] Batch [9/16] Loss: 0.5447 Top-1: 98.37%, Top-5: 99.99% Time: 00:00:08
+Epoch [37/100] Batch [10/16] Loss: 0.5452 Top-1: 98.36%, Top-5: 99.98% Time: 00:00:09
+Epoch [37/100] Batch [11/16] Loss: 0.5450 Top-1: 98.35%, Top-5: 99.98% Time: 00:00:10
+Epoch [37/100] Batch [12/16] Loss: 0.5451 Top-1: 98.34%, Top-5: 99.98% Time: 00:00:11
+Epoch [37/100] Batch [13/16] Loss: 0.5453 Top-1: 98.31%, Top-5: 99.98% Time: 00:00:11
+Epoch [37/100] Batch [14/16] Loss: 0.5456 Top-1: 98.29%, Top-5: 99.98% Time: 00:00:12
+Epoch [37/100] Batch [15/16] Loss: 0.5464 Top-1: 98.26%, Top-5: 99.98% Time: 00:00:13
+Epoch [37/100] Batch [16/16] Loss: 0.5470 Top-1: 98.22%, Top-5: 99.99% Time: 00:00:14
+Train Loss: 0.5470, Top-1: 98.22%, Top-5: 99.99%
+Val Loss: 0.8029, Top-1: 88.90%, Top-5: 98.99%
+Saved best model with accuracy: 88.90%
+
+Epoch: 38/100, LR: 0.000745
+Epoch [38/100] Batch [1/16] Loss: 0.5438 Top-1: 98.31%, Top-5: 100.00% Time: 00:00:01
+Epoch [38/100] Batch [2/16] Loss: 0.5441 Top-1: 98.40%, Top-5: 99.98% Time: 00:00:02
+Epoch [38/100] Batch [3/16] Loss: 0.5444 Top-1: 98.40%, Top-5: 99.98% Time: 00:00:03
+Epoch [38/100] Batch [4/16] Loss: 0.5481 Top-1: 98.25%, Top-5: 99.98% Time: 00:00:04
+Epoch [38/100] Batch [5/16] Loss: 0.5480 Top-1: 98.24%, Top-5: 99.99% Time: 00:00:05
+Epoch [38/100] Batch [6/16] Loss: 0.5486 Top-1: 98.17%, Top-5: 99.97% Time: 00:00:06
+Epoch [38/100] Batch [7/16] Loss: 0.5496 Top-1: 98.12%, Top-5: 99.97% Time: 00:00:06
+Epoch [38/100] Batch [8/16] Loss: 0.5503 Top-1: 98.04%, Top-5: 99.98% Time: 00:00:07
+Epoch [38/100] Batch [9/16] Loss: 0.5503 Top-1: 98.05%, Top-5: 99.98% Time: 00:00:08
+Epoch [38/100] Batch [10/16] Loss: 0.5499 Top-1: 98.05%, Top-5: 99.98% Time: 00:00:09
+Epoch [38/100] Batch [11/16] Loss: 0.5497 Top-1: 98.07%, Top-5: 99.98% Time: 00:00:10
+Epoch [38/100] Batch [12/16] Loss: 0.5501 Top-1: 98.04%, Top-5: 99.98% Time: 00:00:11
+Epoch [38/100] Batch [13/16] Loss: 0.5496 Top-1: 98.07%, Top-5: 99.98% Time: 00:00:11
+Epoch [38/100] Batch [14/16] Loss: 0.5491 Top-1: 98.10%, Top-5: 99.98% Time: 00:00:12
+Epoch [38/100] Batch [15/16] Loss: 0.5489 Top-1: 98.10%, Top-5: 99.98% Time: 00:00:13
+Epoch [38/100] Batch [16/16] Loss: 0.5489 Top-1: 98.09%, Top-5: 99.98% Time: 00:00:14
+Train Loss: 0.5489, Top-1: 98.09%, Top-5: 99.98%
+Val Loss: 0.8153, Top-1: 88.46%, Top-5: 98.66%
+
+Epoch: 39/100, LR: 0.000731
+Epoch [39/100] Batch [1/16] Loss: 0.5372 Top-1: 98.63%, Top-5: 100.00% Time: 00:00:02
+Epoch [39/100] Batch [2/16] Loss: 0.5397 Top-1: 98.44%, Top-5: 100.00% Time: 00:00:02
+Epoch [39/100] Batch [3/16] Loss: 0.5431 Top-1: 98.27%, Top-5: 99.99% Time: 00:00:03
+Epoch [39/100] Batch [4/16] Loss: 0.5420 Top-1: 98.36%, Top-5: 99.99% Time: 00:00:04
+Epoch [39/100] Batch [5/16] Loss: 0.5422 Top-1: 98.33%, Top-5: 99.99% Time: 00:00:05
+Epoch [39/100] Batch [6/16] Loss: 0.5425 Top-1: 98.32%, Top-5: 99.99% Time: 00:00:06
+Epoch [39/100] Batch [7/16] Loss: 0.5427 Top-1: 98.27%, Top-5: 99.99% Time: 00:00:07
+Epoch [39/100] Batch [8/16] Loss: 0.5429 Top-1: 98.28%, Top-5: 99.99% Time: 00:00:07
+Epoch [39/100] Batch [9/16] Loss: 0.5436 Top-1: 98.27%, Top-5: 99.99% Time: 00:00:08
+Epoch [39/100] Batch [10/16] Loss: 0.5436 Top-1: 98.29%, Top-5: 99.98% Time: 00:00:09
+Epoch [39/100] Batch [11/16] Loss: 0.5436 Top-1: 98.29%, Top-5: 99.99% Time: 00:00:10
+Epoch [39/100] Batch [12/16] Loss: 0.5440 Top-1: 98.27%, Top-5: 99.99% Time: 00:00:11
+Epoch [39/100] Batch [13/16] Loss: 0.5442 Top-1: 98.25%, Top-5: 99.98% Time: 00:00:12
+Epoch [39/100] Batch [14/16] Loss: 0.5444 Top-1: 98.25%, Top-5: 99.99% Time: 00:00:12
+Epoch [39/100] Batch [15/16] Loss: 0.5455 Top-1: 98.18%, Top-5: 99.99% Time: 00:00:13
+Epoch [39/100] Batch [16/16] Loss: 0.5448 Top-1: 98.22%, Top-5: 99.99% Time: 00:00:14
+Train Loss: 0.5448, Top-1: 98.22%, Top-5: 99.99%
+Val Loss: 0.8062, Top-1: 88.68%, Top-5: 98.87%
+
+Epoch: 40/100, LR: 0.000716
+Epoch [40/100] Batch [1/16] Loss: 0.5402 Top-1: 98.37%, Top-5: 100.00% Time: 00:00:01
+Epoch [40/100] Batch [2/16] Loss: 0.5377 Top-1: 98.58%, Top-5: 100.00% Time: 00:00:02
+Epoch [40/100] Batch [3/16] Loss: 0.5394 Top-1: 98.52%, Top-5: 100.00% Time: 00:00:03
+Epoch [40/100] Batch [4/16] Loss: 0.5399 Top-1: 98.41%, Top-5: 99.99% Time: 00:00:04
+Epoch [40/100] Batch [5/16] Loss: 0.5420 Top-1: 98.30%, Top-5: 99.99% Time: 00:00:05
+Epoch [40/100] Batch [6/16] Loss: 0.5413 Top-1: 98.34%, Top-5: 99.99% Time: 00:00:06
+Epoch [40/100] Batch [7/16] Loss: 0.5406 Top-1: 98.39%, Top-5: 99.99% Time: 00:00:06
+Epoch [40/100] Batch [8/16] Loss: 0.5415 Top-1: 98.36%, Top-5: 99.99% Time: 00:00:07
+Epoch [40/100] Batch [9/16] Loss: 0.5414 Top-1: 98.36%, Top-5: 99.99% Time: 00:00:08
+Epoch [40/100] Batch [10/16] Loss: 0.5408 Top-1: 98.37%, Top-5: 99.99% Time: 00:00:09
+Epoch [40/100] Batch [11/16] Loss: 0.5405 Top-1: 98.38%, Top-5: 99.99% Time: 00:00:10
+Epoch [40/100] Batch [12/16] Loss: 0.5410 Top-1: 98.34%, Top-5: 99.99% Time: 00:00:11
+Epoch [40/100] Batch [13/16] Loss: 0.5410 Top-1: 98.35%, Top-5: 99.99% Time: 00:00:11
+Epoch [40/100] Batch [14/16] Loss: 0.5417 Top-1: 98.33%, Top-5: 99.99% Time: 00:00:12
+Epoch [40/100] Batch [15/16] Loss: 0.5420 Top-1: 98.33%, Top-5: 99.99% Time: 00:00:13
+Epoch [40/100] Batch [16/16] Loss: 0.5415 Top-1: 98.35%, Top-5: 99.99% Time: 00:00:14
+Train Loss: 0.5415, Top-1: 98.35%, Top-5: 99.99%
+Val Loss: 0.7996, Top-1: 88.94%, Top-5: 98.88%
+Saved best model with accuracy: 88.94%
+
+Epoch: 41/100, LR: 0.000701
+Epoch [41/100] Batch [1/16] Loss: 0.5305 Top-1: 98.73%, Top-5: 100.00% Time: 00:00:01
+Epoch [41/100] Batch [2/16] Loss: 0.5389 Top-1: 98.39%, Top-5: 99.98% Time: 00:00:02
+Epoch [41/100] Batch [3/16] Loss: 0.5414 Top-1: 98.29%, Top-5: 99.98% Time: 00:00:03
+Epoch [41/100] Batch [4/16] Loss: 0.5394 Top-1: 98.40%, Top-5: 99.98% Time: 00:00:04
+Epoch [41/100] Batch [5/16] Loss: 0.5390 Top-1: 98.44%, Top-5: 99.98% Time: 00:00:05
+Epoch [41/100] Batch [6/16] Loss: 0.5394 Top-1: 98.48%, Top-5: 99.98% Time: 00:00:06
+Epoch [41/100] Batch [7/16] Loss: 0.5379 Top-1: 98.54%, Top-5: 99.98% Time: 00:00:06
+Epoch [41/100] Batch [8/16] Loss: 0.5381 Top-1: 98.53%, Top-5: 99.98% Time: 00:00:07
+Epoch [41/100] Batch [9/16] Loss: 0.5386 Top-1: 98.50%, Top-5: 99.98% Time: 00:00:08
+Epoch [41/100] Batch [10/16] Loss: 0.5391 Top-1: 98.48%, Top-5: 99.98% Time: 00:00:09
+Epoch [41/100] Batch [11/16] Loss: 0.5392 Top-1: 98.47%, Top-5: 99.98% Time: 00:00:10
+Epoch [41/100] Batch [12/16] Loss: 0.5390 Top-1: 98.48%, Top-5: 99.98% Time: 00:00:11
+Epoch [41/100] Batch [13/16] Loss: 0.5393 Top-1: 98.45%, Top-5: 99.97% Time: 00:00:11
+Epoch [41/100] Batch [14/16] Loss: 0.5395 Top-1: 98.45%, Top-5: 99.98% Time: 00:00:12
+Epoch [41/100] Batch [15/16] Loss: 0.5392 Top-1: 98.46%, Top-5: 99.98% Time: 00:00:13
+Epoch [41/100] Batch [16/16] Loss: 0.5392 Top-1: 98.47%, Top-5: 99.98% Time: 00:00:14
+Train Loss: 0.5392, Top-1: 98.47%, Top-5: 99.98%
+Val Loss: 0.7956, Top-1: 89.20%, Top-5: 99.08%
+Saved best model with accuracy: 89.20%
+
+Epoch: 42/100, LR: 0.000686
+Epoch [42/100] Batch [1/16] Loss: 0.5321 Top-1: 98.57%, Top-5: 100.00% Time: 00:00:01
+Epoch [42/100] Batch [2/16] Loss: 0.5319 Top-1: 98.65%, Top-5: 100.00% Time: 00:00:02
+Epoch [42/100] Batch [3/16] Loss: 0.5316 Top-1: 98.73%, Top-5: 100.00% Time: 00:00:03
+Epoch [42/100] Batch [4/16] Loss: 0.5325 Top-1: 98.71%, Top-5: 100.00% Time: 00:00:04
+Epoch [42/100] Batch [5/16] Loss: 0.5322 Top-1: 98.74%, Top-5: 100.00% Time: 00:00:05
+Epoch [42/100] Batch [6/16] Loss: 0.5325 Top-1: 98.73%, Top-5: 99.99% Time: 00:00:05
+Epoch [42/100] Batch [7/16] Loss: 0.5329 Top-1: 98.71%, Top-5: 100.00% Time: 00:00:06
+Epoch [42/100] Batch [8/16] Loss: 0.5323 Top-1: 98.75%, Top-5: 100.00% Time: 00:00:07
+Epoch [42/100] Batch [9/16] Loss: 0.5325 Top-1: 98.74%, Top-5: 100.00% Time: 00:00:08
+Epoch [42/100] Batch [10/16] Loss: 0.5334 Top-1: 98.69%, Top-5: 100.00% Time: 00:00:09
+Epoch [42/100] Batch [11/16] Loss: 0.5339 Top-1: 98.67%, Top-5: 100.00% Time: 00:00:10
+Epoch [42/100] Batch [12/16] Loss: 0.5334 Top-1: 98.67%, Top-5: 100.00% Time: 00:00:10
+Epoch [42/100] Batch [13/16] Loss: 0.5331 Top-1: 98.69%, Top-5: 100.00% Time: 00:00:11
+Epoch [42/100] Batch [14/16] Loss: 0.5337 Top-1: 98.66%, Top-5: 100.00% Time: 00:00:12
+Epoch [42/100] Batch [15/16] Loss: 0.5338 Top-1: 98.67%, Top-5: 100.00% Time: 00:00:13
+Epoch [42/100] Batch [16/16] Loss: 0.5338 Top-1: 98.66%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5338, Top-1: 98.66%, Top-5: 100.00%
+Val Loss: 0.7873, Top-1: 89.31%, Top-5: 99.05%
+Saved best model with accuracy: 89.31%
+
+Epoch: 43/100, LR: 0.000670
+Epoch [43/100] Batch [1/16] Loss: 0.5351 Top-1: 98.40%, Top-5: 100.00% Time: 00:00:01
+Epoch [43/100] Batch [2/16] Loss: 0.5326 Top-1: 98.55%, Top-5: 99.98% Time: 00:00:02
+Epoch [43/100] Batch [3/16] Loss: 0.5332 Top-1: 98.57%, Top-5: 99.98% Time: 00:00:03
+Epoch [43/100] Batch [4/16] Loss: 0.5324 Top-1: 98.61%, Top-5: 99.98% Time: 00:00:04
+Epoch [43/100] Batch [5/16] Loss: 0.5320 Top-1: 98.67%, Top-5: 99.99% Time: 00:00:05
+Epoch [43/100] Batch [6/16] Loss: 0.5319 Top-1: 98.72%, Top-5: 99.99% Time: 00:00:06
+Epoch [43/100] Batch [7/16] Loss: 0.5325 Top-1: 98.68%, Top-5: 99.99% Time: 00:00:06
+Epoch [43/100] Batch [8/16] Loss: 0.5326 Top-1: 98.67%, Top-5: 99.99% Time: 00:00:07
+Epoch [43/100] Batch [9/16] Loss: 0.5330 Top-1: 98.66%, Top-5: 99.99% Time: 00:00:08
+Epoch [43/100] Batch [10/16] Loss: 0.5338 Top-1: 98.63%, Top-5: 99.99% Time: 00:00:09
+Epoch [43/100] Batch [11/16] Loss: 0.5339 Top-1: 98.61%, Top-5: 99.99% Time: 00:00:10
+Epoch [43/100] Batch [12/16] Loss: 0.5339 Top-1: 98.62%, Top-5: 99.99% Time: 00:00:11
+Epoch [43/100] Batch [13/16] Loss: 0.5342 Top-1: 98.61%, Top-5: 99.99% Time: 00:00:11
+Epoch [43/100] Batch [14/16] Loss: 0.5349 Top-1: 98.59%, Top-5: 99.99% Time: 00:00:12
+Epoch [43/100] Batch [15/16] Loss: 0.5350 Top-1: 98.58%, Top-5: 99.99% Time: 00:00:13
+Epoch [43/100] Batch [16/16] Loss: 0.5353 Top-1: 98.57%, Top-5: 99.99% Time: 00:00:14
+Train Loss: 0.5353, Top-1: 98.57%, Top-5: 99.99%
+Val Loss: 0.7994, Top-1: 89.43%, Top-5: 98.74%
+Saved best model with accuracy: 89.43%
+
+Epoch: 44/100, LR: 0.000655
+Epoch [44/100] Batch [1/16] Loss: 0.5304 Top-1: 98.93%, Top-5: 100.00% Time: 00:00:01
+Epoch [44/100] Batch [2/16] Loss: 0.5318 Top-1: 98.93%, Top-5: 100.00% Time: 00:00:02
+Epoch [44/100] Batch [3/16] Loss: 0.5340 Top-1: 98.70%, Top-5: 100.00% Time: 00:00:03
+Epoch [44/100] Batch [4/16] Loss: 0.5348 Top-1: 98.72%, Top-5: 99.98% Time: 00:00:04
+Epoch [44/100] Batch [5/16] Loss: 0.5359 Top-1: 98.67%, Top-5: 99.97% Time: 00:00:05
+Epoch [44/100] Batch [6/16] Loss: 0.5364 Top-1: 98.64%, Top-5: 99.98% Time: 00:00:06
+Epoch [44/100] Batch [7/16] Loss: 0.5353 Top-1: 98.67%, Top-5: 99.98% Time: 00:00:06
+Epoch [44/100] Batch [8/16] Loss: 0.5341 Top-1: 98.73%, Top-5: 99.98% Time: 00:00:07
+Epoch [44/100] Batch [9/16] Loss: 0.5333 Top-1: 98.77%, Top-5: 99.99% Time: 00:00:08
+Epoch [44/100] Batch [10/16] Loss: 0.5334 Top-1: 98.77%, Top-5: 99.99% Time: 00:00:09
+Epoch [44/100] Batch [11/16] Loss: 0.5335 Top-1: 98.75%, Top-5: 99.99% Time: 00:00:10
+Epoch [44/100] Batch [12/16] Loss: 0.5333 Top-1: 98.73%, Top-5: 99.99% Time: 00:00:11
+Epoch [44/100] Batch [13/16] Loss: 0.5327 Top-1: 98.77%, Top-5: 99.99% Time: 00:00:11
+Epoch [44/100] Batch [14/16] Loss: 0.5329 Top-1: 98.75%, Top-5: 99.99% Time: 00:00:12
+Epoch [44/100] Batch [15/16] Loss: 0.5324 Top-1: 98.78%, Top-5: 99.99% Time: 00:00:13
+Epoch [44/100] Batch [16/16] Loss: 0.5321 Top-1: 98.78%, Top-5: 99.99% Time: 00:00:14
+Train Loss: 0.5321, Top-1: 98.78%, Top-5: 99.99%
+Val Loss: 0.7916, Top-1: 89.64%, Top-5: 98.61%
+Saved best model with accuracy: 89.64%
+
+Epoch: 45/100, LR: 0.000639
+Epoch [45/100] Batch [1/16] Loss: 0.5250 Top-1: 99.22%, Top-5: 100.00% Time: 00:00:01
+Epoch [45/100] Batch [2/16] Loss: 0.5276 Top-1: 99.10%, Top-5: 100.00% Time: 00:00:02
+Epoch [45/100] Batch [3/16] Loss: 0.5278 Top-1: 99.05%, Top-5: 100.00% Time: 00:00:03
+Epoch [45/100] Batch [4/16] Loss: 0.5279 Top-1: 98.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [45/100] Batch [5/16] Loss: 0.5271 Top-1: 98.96%, Top-5: 100.00% Time: 00:00:05
+Epoch [45/100] Batch [6/16] Loss: 0.5274 Top-1: 98.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [45/100] Batch [7/16] Loss: 0.5278 Top-1: 98.95%, Top-5: 100.00% Time: 00:00:06
+Epoch [45/100] Batch [8/16] Loss: 0.5272 Top-1: 98.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [45/100] Batch [9/16] Loss: 0.5272 Top-1: 98.99%, Top-5: 100.00% Time: 00:00:08
+Epoch [45/100] Batch [10/16] Loss: 0.5270 Top-1: 99.00%, Top-5: 100.00% Time: 00:00:09
+Epoch [45/100] Batch [11/16] Loss: 0.5272 Top-1: 99.00%, Top-5: 100.00% Time: 00:00:10
+Epoch [45/100] Batch [12/16] Loss: 0.5270 Top-1: 99.00%, Top-5: 100.00% Time: 00:00:11
+Epoch [45/100] Batch [13/16] Loss: 0.5265 Top-1: 99.03%, Top-5: 100.00% Time: 00:00:11
+Epoch [45/100] Batch [14/16] Loss: 0.5265 Top-1: 99.02%, Top-5: 100.00% Time: 00:00:12
+Epoch [45/100] Batch [15/16] Loss: 0.5264 Top-1: 99.03%, Top-5: 100.00% Time: 00:00:13
+Epoch [45/100] Batch [16/16] Loss: 0.5262 Top-1: 99.03%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5262, Top-1: 99.03%, Top-5: 100.00%
+Val Loss: 0.7848, Top-1: 89.43%, Top-5: 98.67%
+
+Epoch: 46/100, LR: 0.000623
+Epoch [46/100] Batch [1/16] Loss: 0.5217 Top-1: 99.28%, Top-5: 100.00% Time: 00:00:01
+Epoch [46/100] Batch [2/16] Loss: 0.5258 Top-1: 99.04%, Top-5: 100.00% Time: 00:00:02
+Epoch [46/100] Batch [3/16] Loss: 0.5244 Top-1: 99.11%, Top-5: 100.00% Time: 00:00:03
+Epoch [46/100] Batch [4/16] Loss: 0.5238 Top-1: 99.08%, Top-5: 100.00% Time: 00:00:04
+Epoch [46/100] Batch [5/16] Loss: 0.5235 Top-1: 99.10%, Top-5: 100.00% Time: 00:00:05
+Epoch [46/100] Batch [6/16] Loss: 0.5234 Top-1: 99.09%, Top-5: 100.00% Time: 00:00:06
+Epoch [46/100] Batch [7/16] Loss: 0.5235 Top-1: 99.10%, Top-5: 100.00% Time: 00:00:06
+Epoch [46/100] Batch [8/16] Loss: 0.5230 Top-1: 99.11%, Top-5: 100.00% Time: 00:00:07
+Epoch [46/100] Batch [9/16] Loss: 0.5230 Top-1: 99.11%, Top-5: 100.00% Time: 00:00:08
+Epoch [46/100] Batch [10/16] Loss: 0.5235 Top-1: 99.08%, Top-5: 100.00% Time: 00:00:09
+Epoch [46/100] Batch [11/16] Loss: 0.5234 Top-1: 99.09%, Top-5: 100.00% Time: 00:00:10
+Epoch [46/100] Batch [12/16] Loss: 0.5230 Top-1: 99.12%, Top-5: 100.00% Time: 00:00:11
+Epoch [46/100] Batch [13/16] Loss: 0.5230 Top-1: 99.13%, Top-5: 100.00% Time: 00:00:11
+Epoch [46/100] Batch [14/16] Loss: 0.5230 Top-1: 99.13%, Top-5: 100.00% Time: 00:00:12
+Epoch [46/100] Batch [15/16] Loss: 0.5234 Top-1: 99.12%, Top-5: 100.00% Time: 00:00:13
+Epoch [46/100] Batch [16/16] Loss: 0.5241 Top-1: 99.09%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5241, Top-1: 99.09%, Top-5: 100.00%
+Val Loss: 0.7799, Top-1: 89.83%, Top-5: 98.87%
+Saved best model with accuracy: 89.83%
+
+Epoch: 47/100, LR: 0.000607
+Epoch [47/100] Batch [1/16] Loss: 0.5184 Top-1: 99.25%, Top-5: 100.00% Time: 00:00:01
+Epoch [47/100] Batch [2/16] Loss: 0.5217 Top-1: 99.12%, Top-5: 100.00% Time: 00:00:02
+Epoch [47/100] Batch [3/16] Loss: 0.5227 Top-1: 99.12%, Top-5: 100.00% Time: 00:00:03
+Epoch [47/100] Batch [4/16] Loss: 0.5224 Top-1: 99.19%, Top-5: 100.00% Time: 00:00:04
+Epoch [47/100] Batch [5/16] Loss: 0.5212 Top-1: 99.25%, Top-5: 100.00% Time: 00:00:05
+Epoch [47/100] Batch [6/16] Loss: 0.5209 Top-1: 99.28%, Top-5: 100.00% Time: 00:00:05
+Epoch [47/100] Batch [7/16] Loss: 0.5205 Top-1: 99.27%, Top-5: 100.00% Time: 00:00:06
+Epoch [47/100] Batch [8/16] Loss: 0.5201 Top-1: 99.29%, Top-5: 100.00% Time: 00:00:07
+Epoch [47/100] Batch [9/16] Loss: 0.5204 Top-1: 99.27%, Top-5: 100.00% Time: 00:00:08
+Epoch [47/100] Batch [10/16] Loss: 0.5210 Top-1: 99.24%, Top-5: 100.00% Time: 00:00:09
+Epoch [47/100] Batch [11/16] Loss: 0.5210 Top-1: 99.25%, Top-5: 100.00% Time: 00:00:10
+Epoch [47/100] Batch [12/16] Loss: 0.5212 Top-1: 99.22%, Top-5: 100.00% Time: 00:00:10
+Epoch [47/100] Batch [13/16] Loss: 0.5210 Top-1: 99.22%, Top-5: 100.00% Time: 00:00:11
+Epoch [47/100] Batch [14/16] Loss: 0.5210 Top-1: 99.22%, Top-5: 100.00% Time: 00:00:12
+Epoch [47/100] Batch [15/16] Loss: 0.5210 Top-1: 99.22%, Top-5: 100.00% Time: 00:00:13
+Epoch [47/100] Batch [16/16] Loss: 0.5213 Top-1: 99.20%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5213, Top-1: 99.20%, Top-5: 100.00%
+Val Loss: 0.7968, Top-1: 89.72%, Top-5: 98.69%
+
+Epoch: 48/100, LR: 0.000590
+Epoch [48/100] Batch [1/16] Loss: 0.5233 Top-1: 99.15%, Top-5: 100.00% Time: 00:00:01
+Epoch [48/100] Batch [2/16] Loss: 0.5194 Top-1: 99.30%, Top-5: 100.00% Time: 00:00:02
+Epoch [48/100] Batch [3/16] Loss: 0.5198 Top-1: 99.33%, Top-5: 99.99% Time: 00:00:03
+Epoch [48/100] Batch [4/16] Loss: 0.5198 Top-1: 99.30%, Top-5: 99.99% Time: 00:00:04
+Epoch [48/100] Batch [5/16] Loss: 0.5204 Top-1: 99.27%, Top-5: 99.99% Time: 00:00:05
+Epoch [48/100] Batch [6/16] Loss: 0.5210 Top-1: 99.26%, Top-5: 99.99% Time: 00:00:06
+Epoch [48/100] Batch [7/16] Loss: 0.5209 Top-1: 99.28%, Top-5: 100.00% Time: 00:00:06
+Epoch [48/100] Batch [8/16] Loss: 0.5208 Top-1: 99.28%, Top-5: 100.00% Time: 00:00:07
+Epoch [48/100] Batch [9/16] Loss: 0.5209 Top-1: 99.25%, Top-5: 100.00% Time: 00:00:08
+Epoch [48/100] Batch [10/16] Loss: 0.5204 Top-1: 99.27%, Top-5: 100.00% Time: 00:00:09
+Epoch [48/100] Batch [11/16] Loss: 0.5202 Top-1: 99.29%, Top-5: 100.00% Time: 00:00:10
+Epoch [48/100] Batch [12/16] Loss: 0.5201 Top-1: 99.29%, Top-5: 100.00% Time: 00:00:11
+Epoch [48/100] Batch [13/16] Loss: 0.5204 Top-1: 99.28%, Top-5: 100.00% Time: 00:00:11
+Epoch [48/100] Batch [14/16] Loss: 0.5205 Top-1: 99.27%, Top-5: 100.00% Time: 00:00:12
+Epoch [48/100] Batch [15/16] Loss: 0.5208 Top-1: 99.26%, Top-5: 100.00% Time: 00:00:13
+Epoch [48/100] Batch [16/16] Loss: 0.5212 Top-1: 99.24%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5212, Top-1: 99.24%, Top-5: 100.00%
+Val Loss: 0.7787, Top-1: 90.05%, Top-5: 98.95%
+Saved best model with accuracy: 90.05%
+
+Epoch: 49/100, LR: 0.000574
+Epoch [49/100] Batch [1/16] Loss: 0.5174 Top-1: 99.41%, Top-5: 100.00% Time: 00:00:01
+Epoch [49/100] Batch [2/16] Loss: 0.5177 Top-1: 99.43%, Top-5: 100.00% Time: 00:00:02
+Epoch [49/100] Batch [3/16] Loss: 0.5187 Top-1: 99.39%, Top-5: 100.00% Time: 00:00:03
+Epoch [49/100] Batch [4/16] Loss: 0.5183 Top-1: 99.43%, Top-5: 100.00% Time: 00:00:04
+Epoch [49/100] Batch [5/16] Loss: 0.5185 Top-1: 99.40%, Top-5: 100.00% Time: 00:00:05
+Epoch [49/100] Batch [6/16] Loss: 0.5183 Top-1: 99.39%, Top-5: 99.99% Time: 00:00:06
+Epoch [49/100] Batch [7/16] Loss: 0.5185 Top-1: 99.37%, Top-5: 100.00% Time: 00:00:06
+Epoch [49/100] Batch [8/16] Loss: 0.5180 Top-1: 99.39%, Top-5: 100.00% Time: 00:00:07
+Epoch [49/100] Batch [9/16] Loss: 0.5180 Top-1: 99.40%, Top-5: 100.00% Time: 00:00:08
+Epoch [49/100] Batch [10/16] Loss: 0.5185 Top-1: 99.36%, Top-5: 100.00% Time: 00:00:09
+Epoch [49/100] Batch [11/16] Loss: 0.5184 Top-1: 99.36%, Top-5: 100.00% Time: 00:00:10
+Epoch [49/100] Batch [12/16] Loss: 0.5186 Top-1: 99.34%, Top-5: 100.00% Time: 00:00:11
+Epoch [49/100] Batch [13/16] Loss: 0.5185 Top-1: 99.34%, Top-5: 100.00% Time: 00:00:11
+Epoch [49/100] Batch [14/16] Loss: 0.5186 Top-1: 99.34%, Top-5: 100.00% Time: 00:00:12
+Epoch [49/100] Batch [15/16] Loss: 0.5190 Top-1: 99.34%, Top-5: 100.00% Time: 00:00:13
+Epoch [49/100] Batch [16/16] Loss: 0.5188 Top-1: 99.36%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5188, Top-1: 99.36%, Top-5: 100.00%
+Val Loss: 0.7762, Top-1: 90.00%, Top-5: 98.78%
+
+Epoch: 50/100, LR: 0.000558
+Epoch [50/100] Batch [1/16] Loss: 0.5217 Top-1: 99.35%, Top-5: 100.00% Time: 00:00:02
+Epoch [50/100] Batch [2/16] Loss: 0.5208 Top-1: 99.32%, Top-5: 100.00% Time: 00:00:03
+Epoch [50/100] Batch [3/16] Loss: 0.5201 Top-1: 99.32%, Top-5: 100.00% Time: 00:00:03
+Epoch [50/100] Batch [4/16] Loss: 0.5194 Top-1: 99.33%, Top-5: 100.00% Time: 00:00:04
+Epoch [50/100] Batch [5/16] Loss: 0.5189 Top-1: 99.36%, Top-5: 100.00% Time: 00:00:05
+Epoch [50/100] Batch [6/16] Loss: 0.5186 Top-1: 99.37%, Top-5: 100.00% Time: 00:00:06
+Epoch [50/100] Batch [7/16] Loss: 0.5184 Top-1: 99.38%, Top-5: 100.00% Time: 00:00:07
+Epoch [50/100] Batch [8/16] Loss: 0.5179 Top-1: 99.41%, Top-5: 100.00% Time: 00:00:08
+Epoch [50/100] Batch [9/16] Loss: 0.5182 Top-1: 99.38%, Top-5: 99.99% Time: 00:00:08
+Epoch [50/100] Batch [10/16] Loss: 0.5179 Top-1: 99.38%, Top-5: 99.99% Time: 00:00:09
+Epoch [50/100] Batch [11/16] Loss: 0.5177 Top-1: 99.39%, Top-5: 99.99% Time: 00:00:10
+Epoch [50/100] Batch [12/16] Loss: 0.5178 Top-1: 99.39%, Top-5: 99.99% Time: 00:00:11
+Epoch [50/100] Batch [13/16] Loss: 0.5178 Top-1: 99.40%, Top-5: 99.99% Time: 00:00:12
+Epoch [50/100] Batch [14/16] Loss: 0.5182 Top-1: 99.38%, Top-5: 100.00% Time: 00:00:13
+Epoch [50/100] Batch [15/16] Loss: 0.5181 Top-1: 99.38%, Top-5: 100.00% Time: 00:00:13
+Epoch [50/100] Batch [16/16] Loss: 0.5181 Top-1: 99.39%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5181, Top-1: 99.39%, Top-5: 100.00%
+Val Loss: 0.7881, Top-1: 89.62%, Top-5: 98.61%
+
+Epoch: 51/100, LR: 0.000541
+Epoch [51/100] Batch [1/16] Loss: 0.5159 Top-1: 99.45%, Top-5: 100.00% Time: 00:00:01
+Epoch [51/100] Batch [2/16] Loss: 0.5162 Top-1: 99.41%, Top-5: 100.00% Time: 00:00:02
+Epoch [51/100] Batch [3/16] Loss: 0.5169 Top-1: 99.37%, Top-5: 100.00% Time: 00:00:03
+Epoch [51/100] Batch [4/16] Loss: 0.5153 Top-1: 99.45%, Top-5: 100.00% Time: 00:00:04
+Epoch [51/100] Batch [5/16] Loss: 0.5166 Top-1: 99.40%, Top-5: 100.00% Time: 00:00:05
+Epoch [51/100] Batch [6/16] Loss: 0.5161 Top-1: 99.43%, Top-5: 100.00% Time: 00:00:06
+Epoch [51/100] Batch [7/16] Loss: 0.5159 Top-1: 99.43%, Top-5: 100.00% Time: 00:00:06
+Epoch [51/100] Batch [8/16] Loss: 0.5163 Top-1: 99.42%, Top-5: 100.00% Time: 00:00:07
+Epoch [51/100] Batch [9/16] Loss: 0.5162 Top-1: 99.42%, Top-5: 100.00% Time: 00:00:08
+Epoch [51/100] Batch [10/16] Loss: 0.5167 Top-1: 99.40%, Top-5: 100.00% Time: 00:00:09
+Epoch [51/100] Batch [11/16] Loss: 0.5167 Top-1: 99.40%, Top-5: 100.00% Time: 00:00:10
+Epoch [51/100] Batch [12/16] Loss: 0.5167 Top-1: 99.40%, Top-5: 100.00% Time: 00:00:11
+Epoch [51/100] Batch [13/16] Loss: 0.5170 Top-1: 99.39%, Top-5: 100.00% Time: 00:00:11
+Epoch [51/100] Batch [14/16] Loss: 0.5171 Top-1: 99.38%, Top-5: 100.00% Time: 00:00:12
+Epoch [51/100] Batch [15/16] Loss: 0.5170 Top-1: 99.39%, Top-5: 100.00% Time: 00:00:13
+Epoch [51/100] Batch [16/16] Loss: 0.5171 Top-1: 99.39%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5171, Top-1: 99.39%, Top-5: 100.00%
+Val Loss: 0.7969, Top-1: 89.46%, Top-5: 98.21%
+
+Epoch: 52/100, LR: 0.000525
+Epoch [52/100] Batch [1/16] Loss: 0.5165 Top-1: 99.41%, Top-5: 100.00% Time: 00:00:01
+Epoch [52/100] Batch [2/16] Loss: 0.5169 Top-1: 99.46%, Top-5: 100.00% Time: 00:00:02
+Epoch [52/100] Batch [3/16] Loss: 0.5172 Top-1: 99.44%, Top-5: 100.00% Time: 00:00:03
+Epoch [52/100] Batch [4/16] Loss: 0.5166 Top-1: 99.42%, Top-5: 100.00% Time: 00:00:04
+Epoch [52/100] Batch [5/16] Loss: 0.5173 Top-1: 99.39%, Top-5: 100.00% Time: 00:00:05
+Epoch [52/100] Batch [6/16] Loss: 0.5170 Top-1: 99.42%, Top-5: 100.00% Time: 00:00:06
+Epoch [52/100] Batch [7/16] Loss: 0.5168 Top-1: 99.44%, Top-5: 100.00% Time: 00:00:06
+Epoch [52/100] Batch [8/16] Loss: 0.5173 Top-1: 99.41%, Top-5: 100.00% Time: 00:00:07
+Epoch [52/100] Batch [9/16] Loss: 0.5170 Top-1: 99.41%, Top-5: 100.00% Time: 00:00:08
+Epoch [52/100] Batch [10/16] Loss: 0.5169 Top-1: 99.43%, Top-5: 100.00% Time: 00:00:09
+Epoch [52/100] Batch [11/16] Loss: 0.5167 Top-1: 99.44%, Top-5: 100.00% Time: 00:00:10
+Epoch [52/100] Batch [12/16] Loss: 0.5168 Top-1: 99.44%, Top-5: 100.00% Time: 00:00:11
+Epoch [52/100] Batch [13/16] Loss: 0.5172 Top-1: 99.42%, Top-5: 100.00% Time: 00:00:11
+Epoch [52/100] Batch [14/16] Loss: 0.5172 Top-1: 99.42%, Top-5: 100.00% Time: 00:00:12
+Epoch [52/100] Batch [15/16] Loss: 0.5174 Top-1: 99.42%, Top-5: 100.00% Time: 00:00:13
+Epoch [52/100] Batch [16/16] Loss: 0.5176 Top-1: 99.40%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5176, Top-1: 99.40%, Top-5: 100.00%
+Val Loss: 0.7847, Top-1: 89.89%, Top-5: 98.46%
+
+Epoch: 53/100, LR: 0.000508
+Epoch [53/100] Batch [1/16] Loss: 0.5159 Top-1: 99.38%, Top-5: 100.00% Time: 00:00:01
+Epoch [53/100] Batch [2/16] Loss: 0.5180 Top-1: 99.25%, Top-5: 100.00% Time: 00:00:02
+Epoch [53/100] Batch [3/16] Loss: 0.5181 Top-1: 99.27%, Top-5: 100.00% Time: 00:00:03
+Epoch [53/100] Batch [4/16] Loss: 0.5168 Top-1: 99.35%, Top-5: 100.00% Time: 00:00:04
+Epoch [53/100] Batch [5/16] Loss: 0.5168 Top-1: 99.36%, Top-5: 100.00% Time: 00:00:05
+Epoch [53/100] Batch [6/16] Loss: 0.5160 Top-1: 99.39%, Top-5: 100.00% Time: 00:00:05
+Epoch [53/100] Batch [7/16] Loss: 0.5158 Top-1: 99.40%, Top-5: 100.00% Time: 00:00:06
+Epoch [53/100] Batch [8/16] Loss: 0.5167 Top-1: 99.38%, Top-5: 100.00% Time: 00:00:07
+Epoch [53/100] Batch [9/16] Loss: 0.5162 Top-1: 99.41%, Top-5: 100.00% Time: 00:00:08
+Epoch [53/100] Batch [10/16] Loss: 0.5159 Top-1: 99.43%, Top-5: 100.00% Time: 00:00:09
+Epoch [53/100] Batch [11/16] Loss: 0.5157 Top-1: 99.43%, Top-5: 100.00% Time: 00:00:10
+Epoch [53/100] Batch [12/16] Loss: 0.5157 Top-1: 99.44%, Top-5: 100.00% Time: 00:00:10
+Epoch [53/100] Batch [13/16] Loss: 0.5158 Top-1: 99.44%, Top-5: 100.00% Time: 00:00:11
+Epoch [53/100] Batch [14/16] Loss: 0.5154 Top-1: 99.45%, Top-5: 100.00% Time: 00:00:12
+Epoch [53/100] Batch [15/16] Loss: 0.5152 Top-1: 99.46%, Top-5: 100.00% Time: 00:00:13
+Epoch [53/100] Batch [16/16] Loss: 0.5154 Top-1: 99.45%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5154, Top-1: 99.45%, Top-5: 100.00%
+Val Loss: 0.7787, Top-1: 90.15%, Top-5: 98.43%
+Saved best model with accuracy: 90.15%
+
+Epoch: 54/100, LR: 0.000492
+Epoch [54/100] Batch [1/16] Loss: 0.5143 Top-1: 99.48%, Top-5: 100.00% Time: 00:00:02
+Epoch [54/100] Batch [2/16] Loss: 0.5138 Top-1: 99.50%, Top-5: 100.00% Time: 00:00:02
+Epoch [54/100] Batch [3/16] Loss: 0.5137 Top-1: 99.49%, Top-5: 100.00% Time: 00:00:03
+Epoch [54/100] Batch [4/16] Loss: 0.5136 Top-1: 99.52%, Top-5: 100.00% Time: 00:00:04
+Epoch [54/100] Batch [5/16] Loss: 0.5134 Top-1: 99.55%, Top-5: 100.00% Time: 00:00:05
+Epoch [54/100] Batch [6/16] Loss: 0.5129 Top-1: 99.59%, Top-5: 100.00% Time: 00:00:06
+Epoch [54/100] Batch [7/16] Loss: 0.5133 Top-1: 99.55%, Top-5: 100.00% Time: 00:00:07
+Epoch [54/100] Batch [8/16] Loss: 0.5132 Top-1: 99.54%, Top-5: 100.00% Time: 00:00:07
+Epoch [54/100] Batch [9/16] Loss: 0.5134 Top-1: 99.54%, Top-5: 100.00% Time: 00:00:08
+Epoch [54/100] Batch [10/16] Loss: 0.5135 Top-1: 99.53%, Top-5: 100.00% Time: 00:00:09
+Epoch [54/100] Batch [11/16] Loss: 0.5134 Top-1: 99.54%, Top-5: 100.00% Time: 00:00:10
+Epoch [54/100] Batch [12/16] Loss: 0.5137 Top-1: 99.53%, Top-5: 100.00% Time: 00:00:11
+Epoch [54/100] Batch [13/16] Loss: 0.5138 Top-1: 99.52%, Top-5: 100.00% Time: 00:00:12
+Epoch [54/100] Batch [14/16] Loss: 0.5136 Top-1: 99.53%, Top-5: 100.00% Time: 00:00:12
+Epoch [54/100] Batch [15/16] Loss: 0.5135 Top-1: 99.53%, Top-5: 100.00% Time: 00:00:13
+Epoch [54/100] Batch [16/16] Loss: 0.5135 Top-1: 99.54%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5135, Top-1: 99.54%, Top-5: 100.00%
+Val Loss: 0.7762, Top-1: 90.48%, Top-5: 98.43%
+Saved best model with accuracy: 90.48%
+
+Epoch: 55/100, LR: 0.000475
+Epoch [55/100] Batch [1/16] Loss: 0.5091 Top-1: 99.77%, Top-5: 100.00% Time: 00:00:02
+Epoch [55/100] Batch [2/16] Loss: 0.5112 Top-1: 99.66%, Top-5: 100.00% Time: 00:00:02
+Epoch [55/100] Batch [3/16] Loss: 0.5115 Top-1: 99.64%, Top-5: 100.00% Time: 00:00:03
+Epoch [55/100] Batch [4/16] Loss: 0.5120 Top-1: 99.63%, Top-5: 100.00% Time: 00:00:04
+Epoch [55/100] Batch [5/16] Loss: 0.5121 Top-1: 99.64%, Top-5: 100.00% Time: 00:00:05
+Epoch [55/100] Batch [6/16] Loss: 0.5119 Top-1: 99.64%, Top-5: 100.00% Time: 00:00:06
+Epoch [55/100] Batch [7/16] Loss: 0.5124 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:07
+Epoch [55/100] Batch [8/16] Loss: 0.5122 Top-1: 99.63%, Top-5: 100.00% Time: 00:00:07
+Epoch [55/100] Batch [9/16] Loss: 0.5120 Top-1: 99.63%, Top-5: 100.00% Time: 00:00:08
+Epoch [55/100] Batch [10/16] Loss: 0.5121 Top-1: 99.63%, Top-5: 100.00% Time: 00:00:09
+Epoch [55/100] Batch [11/16] Loss: 0.5124 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:10
+Epoch [55/100] Batch [12/16] Loss: 0.5126 Top-1: 99.60%, Top-5: 100.00% Time: 00:00:11
+Epoch [55/100] Batch [13/16] Loss: 0.5126 Top-1: 99.60%, Top-5: 100.00% Time: 00:00:12
+Epoch [55/100] Batch [14/16] Loss: 0.5126 Top-1: 99.60%, Top-5: 100.00% Time: 00:00:12
+Epoch [55/100] Batch [15/16] Loss: 0.5125 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:13
+Epoch [55/100] Batch [16/16] Loss: 0.5124 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5124, Top-1: 99.61%, Top-5: 100.00%
+Val Loss: 0.7854, Top-1: 90.15%, Top-5: 98.71%
+
+Epoch: 56/100, LR: 0.000459
+Epoch [56/100] Batch [1/16] Loss: 0.5101 Top-1: 99.51%, Top-5: 100.00% Time: 00:00:02
+Epoch [56/100] Batch [2/16] Loss: 0.5106 Top-1: 99.59%, Top-5: 100.00% Time: 00:00:02
+Epoch [56/100] Batch [3/16] Loss: 0.5116 Top-1: 99.54%, Top-5: 100.00% Time: 00:00:03
+Epoch [56/100] Batch [4/16] Loss: 0.5125 Top-1: 99.52%, Top-5: 100.00% Time: 00:00:04
+Epoch [56/100] Batch [5/16] Loss: 0.5120 Top-1: 99.57%, Top-5: 100.00% Time: 00:00:05
+Epoch [56/100] Batch [6/16] Loss: 0.5118 Top-1: 99.59%, Top-5: 100.00% Time: 00:00:06
+Epoch [56/100] Batch [7/16] Loss: 0.5116 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:07
+Epoch [56/100] Batch [8/16] Loss: 0.5119 Top-1: 99.59%, Top-5: 100.00% Time: 00:00:07
+Epoch [56/100] Batch [9/16] Loss: 0.5121 Top-1: 99.58%, Top-5: 100.00% Time: 00:00:08
+Epoch [56/100] Batch [10/16] Loss: 0.5123 Top-1: 99.57%, Top-5: 100.00% Time: 00:00:09
+Epoch [56/100] Batch [11/16] Loss: 0.5120 Top-1: 99.59%, Top-5: 100.00% Time: 00:00:10
+Epoch [56/100] Batch [12/16] Loss: 0.5119 Top-1: 99.59%, Top-5: 100.00% Time: 00:00:11
+Epoch [56/100] Batch [13/16] Loss: 0.5118 Top-1: 99.59%, Top-5: 100.00% Time: 00:00:12
+Epoch [56/100] Batch [14/16] Loss: 0.5120 Top-1: 99.58%, Top-5: 100.00% Time: 00:00:12
+Epoch [56/100] Batch [15/16] Loss: 0.5119 Top-1: 99.58%, Top-5: 100.00% Time: 00:00:13
+Epoch [56/100] Batch [16/16] Loss: 0.5119 Top-1: 99.59%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5119, Top-1: 99.59%, Top-5: 100.00%
+Val Loss: 0.7826, Top-1: 90.30%, Top-5: 98.58%
+
+Epoch: 57/100, LR: 0.000442
+Epoch [57/100] Batch [1/16] Loss: 0.5132 Top-1: 99.41%, Top-5: 100.00% Time: 00:00:02
+Epoch [57/100] Batch [2/16] Loss: 0.5109 Top-1: 99.56%, Top-5: 99.98% Time: 00:00:02
+Epoch [57/100] Batch [3/16] Loss: 0.5119 Top-1: 99.53%, Top-5: 99.99% Time: 00:00:03
+Epoch [57/100] Batch [4/16] Loss: 0.5114 Top-1: 99.58%, Top-5: 99.99% Time: 00:00:04
+Epoch [57/100] Batch [5/16] Loss: 0.5118 Top-1: 99.58%, Top-5: 99.99% Time: 00:00:05
+Epoch [57/100] Batch [6/16] Loss: 0.5114 Top-1: 99.60%, Top-5: 99.99% Time: 00:00:06
+Epoch [57/100] Batch [7/16] Loss: 0.5113 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:07
+Epoch [57/100] Batch [8/16] Loss: 0.5112 Top-1: 99.63%, Top-5: 100.00% Time: 00:00:07
+Epoch [57/100] Batch [9/16] Loss: 0.5118 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:08
+Epoch [57/100] Batch [10/16] Loss: 0.5118 Top-1: 99.60%, Top-5: 100.00% Time: 00:00:09
+Epoch [57/100] Batch [11/16] Loss: 0.5115 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:10
+Epoch [57/100] Batch [12/16] Loss: 0.5117 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:11
+Epoch [57/100] Batch [13/16] Loss: 0.5118 Top-1: 99.60%, Top-5: 100.00% Time: 00:00:12
+Epoch [57/100] Batch [14/16] Loss: 0.5116 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:12
+Epoch [57/100] Batch [15/16] Loss: 0.5115 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:13
+Epoch [57/100] Batch [16/16] Loss: 0.5114 Top-1: 99.61%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5114, Top-1: 99.61%, Top-5: 100.00%
+Val Loss: 0.7822, Top-1: 90.16%, Top-5: 98.51%
+
+Epoch: 58/100, LR: 0.000426
+Epoch [58/100] Batch [1/16] Loss: 0.5084 Top-1: 99.77%, Top-5: 100.00% Time: 00:00:02
+Epoch [58/100] Batch [2/16] Loss: 0.5106 Top-1: 99.67%, Top-5: 99.98% Time: 00:00:02
+Epoch [58/100] Batch [3/16] Loss: 0.5105 Top-1: 99.66%, Top-5: 99.99% Time: 00:00:03
+Epoch [58/100] Batch [4/16] Loss: 0.5105 Top-1: 99.66%, Top-5: 99.99% Time: 00:00:04
+Epoch [58/100] Batch [5/16] Loss: 0.5097 Top-1: 99.71%, Top-5: 99.99% Time: 00:00:05
+Epoch [58/100] Batch [6/16] Loss: 0.5100 Top-1: 99.69%, Top-5: 99.99% Time: 00:00:06
+Epoch [58/100] Batch [7/16] Loss: 0.5100 Top-1: 99.70%, Top-5: 100.00% Time: 00:00:07
+Epoch [58/100] Batch [8/16] Loss: 0.5096 Top-1: 99.71%, Top-5: 100.00% Time: 00:00:07
+Epoch [58/100] Batch [9/16] Loss: 0.5094 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:08
+Epoch [58/100] Batch [10/16] Loss: 0.5092 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:09
+Epoch [58/100] Batch [11/16] Loss: 0.5092 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:10
+Epoch [58/100] Batch [12/16] Loss: 0.5092 Top-1: 99.71%, Top-5: 100.00% Time: 00:00:11
+Epoch [58/100] Batch [13/16] Loss: 0.5090 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:12
+Epoch [58/100] Batch [14/16] Loss: 0.5090 Top-1: 99.73%, Top-5: 100.00% Time: 00:00:12
+Epoch [58/100] Batch [15/16] Loss: 0.5090 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:13
+Epoch [58/100] Batch [16/16] Loss: 0.5089 Top-1: 99.73%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5089, Top-1: 99.73%, Top-5: 100.00%
+Val Loss: 0.7732, Top-1: 90.33%, Top-5: 98.52%
+
+Epoch: 59/100, LR: 0.000410
+Epoch [59/100] Batch [1/16] Loss: 0.5080 Top-1: 99.80%, Top-5: 100.00% Time: 00:00:02
+Epoch [59/100] Batch [2/16] Loss: 0.5076 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:02
+Epoch [59/100] Batch [3/16] Loss: 0.5082 Top-1: 99.73%, Top-5: 100.00% Time: 00:00:03
+Epoch [59/100] Batch [4/16] Loss: 0.5096 Top-1: 99.65%, Top-5: 100.00% Time: 00:00:04
+Epoch [59/100] Batch [5/16] Loss: 0.5090 Top-1: 99.69%, Top-5: 100.00% Time: 00:00:05
+Epoch [59/100] Batch [6/16] Loss: 0.5092 Top-1: 99.69%, Top-5: 100.00% Time: 00:00:06
+Epoch [59/100] Batch [7/16] Loss: 0.5092 Top-1: 99.70%, Top-5: 100.00% Time: 00:00:07
+Epoch [59/100] Batch [8/16] Loss: 0.5093 Top-1: 99.69%, Top-5: 100.00% Time: 00:00:07
+Epoch [59/100] Batch [9/16] Loss: 0.5092 Top-1: 99.69%, Top-5: 100.00% Time: 00:00:08
+Epoch [59/100] Batch [10/16] Loss: 0.5089 Top-1: 99.71%, Top-5: 100.00% Time: 00:00:09
+Epoch [59/100] Batch [11/16] Loss: 0.5089 Top-1: 99.71%, Top-5: 100.00% Time: 00:00:10
+Epoch [59/100] Batch [12/16] Loss: 0.5089 Top-1: 99.71%, Top-5: 100.00% Time: 00:00:11
+Epoch [59/100] Batch [13/16] Loss: 0.5092 Top-1: 99.70%, Top-5: 100.00% Time: 00:00:11
+Epoch [59/100] Batch [14/16] Loss: 0.5091 Top-1: 99.71%, Top-5: 100.00% Time: 00:00:12
+Epoch [59/100] Batch [15/16] Loss: 0.5090 Top-1: 99.71%, Top-5: 100.00% Time: 00:00:13
+Epoch [59/100] Batch [16/16] Loss: 0.5091 Top-1: 99.71%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5091, Top-1: 99.71%, Top-5: 100.00%
+Val Loss: 0.7727, Top-1: 90.63%, Top-5: 98.72%
+Saved best model with accuracy: 90.63%
+
+Epoch: 60/100, LR: 0.000393
+Epoch [60/100] Batch [1/16] Loss: 0.5098 Top-1: 99.67%, Top-5: 100.00% Time: 00:00:02
+Epoch [60/100] Batch [2/16] Loss: 0.5098 Top-1: 99.64%, Top-5: 100.00% Time: 00:00:02
+Epoch [60/100] Batch [3/16] Loss: 0.5086 Top-1: 99.70%, Top-5: 100.00% Time: 00:00:03
+Epoch [60/100] Batch [4/16] Loss: 0.5085 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:04
+Epoch [60/100] Batch [5/16] Loss: 0.5089 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:05
+Epoch [60/100] Batch [6/16] Loss: 0.5084 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:06
+Epoch [60/100] Batch [7/16] Loss: 0.5084 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:07
+Epoch [60/100] Batch [8/16] Loss: 0.5083 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:07
+Epoch [60/100] Batch [9/16] Loss: 0.5083 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:08
+Epoch [60/100] Batch [10/16] Loss: 0.5084 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:09
+Epoch [60/100] Batch [11/16] Loss: 0.5082 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:10
+Epoch [60/100] Batch [12/16] Loss: 0.5082 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:11
+Epoch [60/100] Batch [13/16] Loss: 0.5081 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:12
+Epoch [60/100] Batch [14/16] Loss: 0.5082 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:12
+Epoch [60/100] Batch [15/16] Loss: 0.5080 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:13
+Epoch [60/100] Batch [16/16] Loss: 0.5080 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5080, Top-1: 99.75%, Top-5: 100.00%
+Val Loss: 0.7699, Top-1: 90.63%, Top-5: 98.55%
+
+Epoch: 61/100, LR: 0.000377
+Epoch [61/100] Batch [1/16] Loss: 0.5065 Top-1: 99.80%, Top-5: 100.00% Time: 00:00:01
+Epoch [61/100] Batch [2/16] Loss: 0.5062 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:02
+Epoch [61/100] Batch [3/16] Loss: 0.5073 Top-1: 99.73%, Top-5: 100.00% Time: 00:00:03
+Epoch [61/100] Batch [4/16] Loss: 0.5075 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:04
+Epoch [61/100] Batch [5/16] Loss: 0.5077 Top-1: 99.73%, Top-5: 100.00% Time: 00:00:05
+Epoch [61/100] Batch [6/16] Loss: 0.5077 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:06
+Epoch [61/100] Batch [7/16] Loss: 0.5076 Top-1: 99.73%, Top-5: 100.00% Time: 00:00:06
+Epoch [61/100] Batch [8/16] Loss: 0.5075 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:07
+Epoch [61/100] Batch [9/16] Loss: 0.5076 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:08
+Epoch [61/100] Batch [10/16] Loss: 0.5075 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:09
+Epoch [61/100] Batch [11/16] Loss: 0.5072 Top-1: 99.76%, Top-5: 100.00% Time: 00:00:10
+Epoch [61/100] Batch [12/16] Loss: 0.5072 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:11
+Epoch [61/100] Batch [13/16] Loss: 0.5072 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:11
+Epoch [61/100] Batch [14/16] Loss: 0.5070 Top-1: 99.76%, Top-5: 100.00% Time: 00:00:12
+Epoch [61/100] Batch [15/16] Loss: 0.5070 Top-1: 99.76%, Top-5: 100.00% Time: 00:00:13
+Epoch [61/100] Batch [16/16] Loss: 0.5071 Top-1: 99.76%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5071, Top-1: 99.76%, Top-5: 100.00%
+Val Loss: 0.7742, Top-1: 90.55%, Top-5: 98.50%
+
+Epoch: 62/100, LR: 0.000361
+Epoch [62/100] Batch [1/16] Loss: 0.5062 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:02
+Epoch [62/100] Batch [2/16] Loss: 0.5076 Top-1: 99.72%, Top-5: 100.00% Time: 00:00:02
+Epoch [62/100] Batch [3/16] Loss: 0.5076 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:03
+Epoch [62/100] Batch [4/16] Loss: 0.5077 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:04
+Epoch [62/100] Batch [5/16] Loss: 0.5073 Top-1: 99.76%, Top-5: 100.00% Time: 00:00:05
+Epoch [62/100] Batch [6/16] Loss: 0.5071 Top-1: 99.77%, Top-5: 100.00% Time: 00:00:06
+Epoch [62/100] Batch [7/16] Loss: 0.5068 Top-1: 99.78%, Top-5: 100.00% Time: 00:00:07
+Epoch [62/100] Batch [8/16] Loss: 0.5070 Top-1: 99.77%, Top-5: 100.00% Time: 00:00:07
+Epoch [62/100] Batch [9/16] Loss: 0.5066 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:08
+Epoch [62/100] Batch [10/16] Loss: 0.5070 Top-1: 99.76%, Top-5: 100.00% Time: 00:00:09
+Epoch [62/100] Batch [11/16] Loss: 0.5072 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:10
+Epoch [62/100] Batch [12/16] Loss: 0.5072 Top-1: 99.76%, Top-5: 100.00% Time: 00:00:11
+Epoch [62/100] Batch [13/16] Loss: 0.5074 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:12
+Epoch [62/100] Batch [14/16] Loss: 0.5075 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:12
+Epoch [62/100] Batch [15/16] Loss: 0.5074 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:13
+Epoch [62/100] Batch [16/16] Loss: 0.5074 Top-1: 99.75%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5074, Top-1: 99.75%, Top-5: 100.00%
+Val Loss: 0.7791, Top-1: 90.80%, Top-5: 98.40%
+Saved best model with accuracy: 90.80%
+
+Epoch: 63/100, LR: 0.000345
+Epoch [63/100] Batch [1/16] Loss: 0.5072 Top-1: 99.67%, Top-5: 100.00% Time: 00:00:02
+Epoch [63/100] Batch [2/16] Loss: 0.5067 Top-1: 99.74%, Top-5: 100.00% Time: 00:00:02
+Epoch [63/100] Batch [3/16] Loss: 0.5069 Top-1: 99.77%, Top-5: 100.00% Time: 00:00:03
+Epoch [63/100] Batch [4/16] Loss: 0.5070 Top-1: 99.77%, Top-5: 100.00% Time: 00:00:04
+Epoch [63/100] Batch [5/16] Loss: 0.5067 Top-1: 99.78%, Top-5: 100.00% Time: 00:00:05
+Epoch [63/100] Batch [6/16] Loss: 0.5066 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:06
+Epoch [63/100] Batch [7/16] Loss: 0.5064 Top-1: 99.81%, Top-5: 100.00% Time: 00:00:07
+Epoch [63/100] Batch [8/16] Loss: 0.5067 Top-1: 99.81%, Top-5: 100.00% Time: 00:00:07
+Epoch [63/100] Batch [9/16] Loss: 0.5068 Top-1: 99.80%, Top-5: 100.00% Time: 00:00:08
+Epoch [63/100] Batch [10/16] Loss: 0.5067 Top-1: 99.80%, Top-5: 100.00% Time: 00:00:09
+Epoch [63/100] Batch [11/16] Loss: 0.5068 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:10
+Epoch [63/100] Batch [12/16] Loss: 0.5066 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:11
+Epoch [63/100] Batch [13/16] Loss: 0.5067 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:12
+Epoch [63/100] Batch [14/16] Loss: 0.5067 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:12
+Epoch [63/100] Batch [15/16] Loss: 0.5068 Top-1: 99.78%, Top-5: 100.00% Time: 00:00:13
+Epoch [63/100] Batch [16/16] Loss: 0.5069 Top-1: 99.78%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5069, Top-1: 99.78%, Top-5: 100.00%
+Val Loss: 0.7663, Top-1: 90.87%, Top-5: 98.65%
+Saved best model with accuracy: 90.87%
+
+Epoch: 64/100, LR: 0.000330
+Epoch [64/100] Batch [1/16] Loss: 0.5051 Top-1: 99.90%, Top-5: 100.00% Time: 00:00:02
+Epoch [64/100] Batch [2/16] Loss: 0.5049 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:02
+Epoch [64/100] Batch [3/16] Loss: 0.5046 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:03
+Epoch [64/100] Batch [4/16] Loss: 0.5044 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:04
+Epoch [64/100] Batch [5/16] Loss: 0.5050 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:05
+Epoch [64/100] Batch [6/16] Loss: 0.5055 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:06
+Epoch [64/100] Batch [7/16] Loss: 0.5056 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:07
+Epoch [64/100] Batch [8/16] Loss: 0.5055 Top-1: 99.85%, Top-5: 100.00% Time: 00:00:07
+Epoch [64/100] Batch [9/16] Loss: 0.5055 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:08
+Epoch [64/100] Batch [10/16] Loss: 0.5055 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:09
+Epoch [64/100] Batch [11/16] Loss: 0.5058 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:10
+Epoch [64/100] Batch [12/16] Loss: 0.5059 Top-1: 99.82%, Top-5: 100.00% Time: 00:00:11
+Epoch [64/100] Batch [13/16] Loss: 0.5059 Top-1: 99.82%, Top-5: 100.00% Time: 00:00:12
+Epoch [64/100] Batch [14/16] Loss: 0.5059 Top-1: 99.82%, Top-5: 100.00% Time: 00:00:12
+Epoch [64/100] Batch [15/16] Loss: 0.5057 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:13
+Epoch [64/100] Batch [16/16] Loss: 0.5057 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5057, Top-1: 99.83%, Top-5: 100.00%
+Val Loss: 0.7789, Top-1: 90.68%, Top-5: 98.34%
+
+Epoch: 65/100, LR: 0.000314
+Epoch [65/100] Batch [1/16] Loss: 0.5049 Top-1: 99.90%, Top-5: 100.00% Time: 00:00:01
+Epoch [65/100] Batch [2/16] Loss: 0.5049 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:02
+Epoch [65/100] Batch [3/16] Loss: 0.5058 Top-1: 99.82%, Top-5: 100.00% Time: 00:00:03
+Epoch [65/100] Batch [4/16] Loss: 0.5053 Top-1: 99.86%, Top-5: 100.00% Time: 00:00:04
+Epoch [65/100] Batch [5/16] Loss: 0.5056 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:05
+Epoch [65/100] Batch [6/16] Loss: 0.5055 Top-1: 99.85%, Top-5: 100.00% Time: 00:00:06
+Epoch [65/100] Batch [7/16] Loss: 0.5053 Top-1: 99.86%, Top-5: 100.00% Time: 00:00:06
+Epoch [65/100] Batch [8/16] Loss: 0.5053 Top-1: 99.86%, Top-5: 100.00% Time: 00:00:07
+Epoch [65/100] Batch [9/16] Loss: 0.5056 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:08
+Epoch [65/100] Batch [10/16] Loss: 0.5056 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:09
+Epoch [65/100] Batch [11/16] Loss: 0.5056 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:10
+Epoch [65/100] Batch [12/16] Loss: 0.5058 Top-1: 99.82%, Top-5: 100.00% Time: 00:00:11
+Epoch [65/100] Batch [13/16] Loss: 0.5060 Top-1: 99.82%, Top-5: 100.00% Time: 00:00:11
+Epoch [65/100] Batch [14/16] Loss: 0.5059 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:12
+Epoch [65/100] Batch [15/16] Loss: 0.5060 Top-1: 99.82%, Top-5: 100.00% Time: 00:00:13
+Epoch [65/100] Batch [16/16] Loss: 0.5058 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5058, Top-1: 99.83%, Top-5: 100.00%
+Val Loss: 0.7763, Top-1: 90.57%, Top-5: 98.42%
+
+Epoch: 66/100, LR: 0.000299
+Epoch [66/100] Batch [1/16] Loss: 0.5057 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:01
+Epoch [66/100] Batch [2/16] Loss: 0.5067 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:02
+Epoch [66/100] Batch [3/16] Loss: 0.5061 Top-1: 99.83%, Top-5: 100.00% Time: 00:00:03
+Epoch [66/100] Batch [4/16] Loss: 0.5059 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:04
+Epoch [66/100] Batch [5/16] Loss: 0.5057 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:05
+Epoch [66/100] Batch [6/16] Loss: 0.5057 Top-1: 99.85%, Top-5: 100.00% Time: 00:00:06
+Epoch [66/100] Batch [7/16] Loss: 0.5053 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:06
+Epoch [66/100] Batch [8/16] Loss: 0.5052 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:07
+Epoch [66/100] Batch [9/16] Loss: 0.5051 Top-1: 99.88%, Top-5: 100.00% Time: 00:00:08
+Epoch [66/100] Batch [10/16] Loss: 0.5049 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:09
+Epoch [66/100] Batch [11/16] Loss: 0.5051 Top-1: 99.88%, Top-5: 100.00% Time: 00:00:10
+Epoch [66/100] Batch [12/16] Loss: 0.5050 Top-1: 99.88%, Top-5: 100.00% Time: 00:00:11
+Epoch [66/100] Batch [13/16] Loss: 0.5051 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:11
+Epoch [66/100] Batch [14/16] Loss: 0.5051 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:12
+Epoch [66/100] Batch [15/16] Loss: 0.5053 Top-1: 99.86%, Top-5: 100.00% Time: 00:00:13
+Epoch [66/100] Batch [16/16] Loss: 0.5052 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5052, Top-1: 99.87%, Top-5: 100.00%
+Val Loss: 0.7690, Top-1: 90.81%, Top-5: 98.53%
+
+Epoch: 67/100, LR: 0.000284
+Epoch [67/100] Batch [1/16] Loss: 0.5039 Top-1: 99.90%, Top-5: 100.00% Time: 00:00:01
+Epoch [67/100] Batch [2/16] Loss: 0.5039 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:02
+Epoch [67/100] Batch [3/16] Loss: 0.5040 Top-1: 99.91%, Top-5: 100.00% Time: 00:00:03
+Epoch [67/100] Batch [4/16] Loss: 0.5044 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:04
+Epoch [67/100] Batch [5/16] Loss: 0.5039 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:05
+Epoch [67/100] Batch [6/16] Loss: 0.5041 Top-1: 99.90%, Top-5: 100.00% Time: 00:00:06
+Epoch [67/100] Batch [7/16] Loss: 0.5040 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:06
+Epoch [67/100] Batch [8/16] Loss: 0.5039 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:07
+Epoch [67/100] Batch [9/16] Loss: 0.5040 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:08
+Epoch [67/100] Batch [10/16] Loss: 0.5040 Top-1: 99.91%, Top-5: 100.00% Time: 00:00:09
+Epoch [67/100] Batch [11/16] Loss: 0.5040 Top-1: 99.91%, Top-5: 100.00% Time: 00:00:10
+Epoch [67/100] Batch [12/16] Loss: 0.5040 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:11
+Epoch [67/100] Batch [13/16] Loss: 0.5039 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:11
+Epoch [67/100] Batch [14/16] Loss: 0.5038 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:12
+Epoch [67/100] Batch [15/16] Loss: 0.5038 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:13
+Epoch [67/100] Batch [16/16] Loss: 0.5038 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5038, Top-1: 99.92%, Top-5: 100.00%
+Val Loss: 0.7679, Top-1: 90.80%, Top-5: 98.39%
+
+Epoch: 68/100, LR: 0.000269
+Epoch [68/100] Batch [1/16] Loss: 0.5048 Top-1: 99.80%, Top-5: 100.00% Time: 00:00:01
+Epoch [68/100] Batch [2/16] Loss: 0.5052 Top-1: 99.77%, Top-5: 100.00% Time: 00:00:02
+Epoch [68/100] Batch [3/16] Loss: 0.5054 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:03
+Epoch [68/100] Batch [4/16] Loss: 0.5059 Top-1: 99.79%, Top-5: 100.00% Time: 00:00:04
+Epoch [68/100] Batch [5/16] Loss: 0.5053 Top-1: 99.82%, Top-5: 100.00% Time: 00:00:05
+Epoch [68/100] Batch [6/16] Loss: 0.5050 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:06
+Epoch [68/100] Batch [7/16] Loss: 0.5047 Top-1: 99.85%, Top-5: 100.00% Time: 00:00:06
+Epoch [68/100] Batch [8/16] Loss: 0.5046 Top-1: 99.85%, Top-5: 100.00% Time: 00:00:07
+Epoch [68/100] Batch [9/16] Loss: 0.5044 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:08
+Epoch [68/100] Batch [10/16] Loss: 0.5044 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:09
+Epoch [68/100] Batch [11/16] Loss: 0.5043 Top-1: 99.88%, Top-5: 100.00% Time: 00:00:10
+Epoch [68/100] Batch [12/16] Loss: 0.5042 Top-1: 99.88%, Top-5: 100.00% Time: 00:00:11
+Epoch [68/100] Batch [13/16] Loss: 0.5041 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:11
+Epoch [68/100] Batch [14/16] Loss: 0.5042 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:12
+Epoch [68/100] Batch [15/16] Loss: 0.5041 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:13
+Epoch [68/100] Batch [16/16] Loss: 0.5041 Top-1: 99.89%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5041, Top-1: 99.89%, Top-5: 100.00%
+Val Loss: 0.7666, Top-1: 90.83%, Top-5: 98.59%
+
+Epoch: 69/100, LR: 0.000255
+Epoch [69/100] Batch [1/16] Loss: 0.5035 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:01
+Epoch [69/100] Batch [2/16] Loss: 0.5039 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:02
+Epoch [69/100] Batch [3/16] Loss: 0.5036 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:03
+Epoch [69/100] Batch [4/16] Loss: 0.5037 Top-1: 99.92%, Top-5: 99.99% Time: 00:00:04
+Epoch [69/100] Batch [5/16] Loss: 0.5035 Top-1: 99.93%, Top-5: 99.99% Time: 00:00:05
+Epoch [69/100] Batch [6/16] Loss: 0.5034 Top-1: 99.94%, Top-5: 99.99% Time: 00:00:06
+Epoch [69/100] Batch [7/16] Loss: 0.5033 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:06
+Epoch [69/100] Batch [8/16] Loss: 0.5033 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:07
+Epoch [69/100] Batch [9/16] Loss: 0.5035 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:08
+Epoch [69/100] Batch [10/16] Loss: 0.5034 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:09
+Epoch [69/100] Batch [11/16] Loss: 0.5034 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:10
+Epoch [69/100] Batch [12/16] Loss: 0.5034 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:11
+Epoch [69/100] Batch [13/16] Loss: 0.5034 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:11
+Epoch [69/100] Batch [14/16] Loss: 0.5034 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:12
+Epoch [69/100] Batch [15/16] Loss: 0.5034 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:13
+Epoch [69/100] Batch [16/16] Loss: 0.5034 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5034, Top-1: 99.94%, Top-5: 100.00%
+Val Loss: 0.7641, Top-1: 91.10%, Top-5: 98.54%
+Saved best model with accuracy: 91.10%
+
+Epoch: 70/100, LR: 0.000241
+Epoch [70/100] Batch [1/16] Loss: 0.5043 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:02
+Epoch [70/100] Batch [2/16] Loss: 0.5037 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:02
+Epoch [70/100] Batch [3/16] Loss: 0.5037 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:03
+Epoch [70/100] Batch [4/16] Loss: 0.5037 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:04
+Epoch [70/100] Batch [5/16] Loss: 0.5037 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:05
+Epoch [70/100] Batch [6/16] Loss: 0.5035 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:06
+Epoch [70/100] Batch [7/16] Loss: 0.5038 Top-1: 99.91%, Top-5: 100.00% Time: 00:00:07
+Epoch [70/100] Batch [8/16] Loss: 0.5036 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:07
+Epoch [70/100] Batch [9/16] Loss: 0.5034 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:08
+Epoch [70/100] Batch [10/16] Loss: 0.5035 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:09
+Epoch [70/100] Batch [11/16] Loss: 0.5036 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:10
+Epoch [70/100] Batch [12/16] Loss: 0.5035 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:11
+Epoch [70/100] Batch [13/16] Loss: 0.5035 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:12
+Epoch [70/100] Batch [14/16] Loss: 0.5035 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:12
+Epoch [70/100] Batch [15/16] Loss: 0.5035 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:13
+Epoch [70/100] Batch [16/16] Loss: 0.5035 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5035, Top-1: 99.92%, Top-5: 100.00%
+Val Loss: 0.7642, Top-1: 90.89%, Top-5: 98.52%
+
+Epoch: 71/100, LR: 0.000227
+Epoch [71/100] Batch [1/16] Loss: 0.5033 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:01
+Epoch [71/100] Batch [2/16] Loss: 0.5033 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:02
+Epoch [71/100] Batch [3/16] Loss: 0.5032 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:03
+Epoch [71/100] Batch [4/16] Loss: 0.5031 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:04
+Epoch [71/100] Batch [5/16] Loss: 0.5032 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:05
+Epoch [71/100] Batch [6/16] Loss: 0.5032 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:06
+Epoch [71/100] Batch [7/16] Loss: 0.5033 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:06
+Epoch [71/100] Batch [8/16] Loss: 0.5033 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:07
+Epoch [71/100] Batch [9/16] Loss: 0.5034 Top-1: 99.91%, Top-5: 100.00% Time: 00:00:08
+Epoch [71/100] Batch [10/16] Loss: 0.5033 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:09
+Epoch [71/100] Batch [11/16] Loss: 0.5033 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:10
+Epoch [71/100] Batch [12/16] Loss: 0.5033 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:11
+Epoch [71/100] Batch [13/16] Loss: 0.5032 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:11
+Epoch [71/100] Batch [14/16] Loss: 0.5033 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:12
+Epoch [71/100] Batch [15/16] Loss: 0.5034 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:13
+Epoch [71/100] Batch [16/16] Loss: 0.5033 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5033, Top-1: 99.92%, Top-5: 100.00%
+Val Loss: 0.7642, Top-1: 91.08%, Top-5: 98.59%
+
+Epoch: 72/100, LR: 0.000213
+Epoch [72/100] Batch [1/16] Loss: 0.5040 Top-1: 99.90%, Top-5: 100.00% Time: 00:00:02
+Epoch [72/100] Batch [2/16] Loss: 0.5029 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:03
+Epoch [72/100] Batch [3/16] Loss: 0.5032 Top-1: 99.91%, Top-5: 100.00% Time: 00:00:03
+Epoch [72/100] Batch [4/16] Loss: 0.5029 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:04
+Epoch [72/100] Batch [5/16] Loss: 0.5030 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:05
+Epoch [72/100] Batch [6/16] Loss: 0.5029 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:06
+Epoch [72/100] Batch [7/16] Loss: 0.5028 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:07
+Epoch [72/100] Batch [8/16] Loss: 0.5030 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:08
+Epoch [72/100] Batch [9/16] Loss: 0.5030 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:08
+Epoch [72/100] Batch [10/16] Loss: 0.5030 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:09
+Epoch [72/100] Batch [11/16] Loss: 0.5030 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:10
+Epoch [72/100] Batch [12/16] Loss: 0.5030 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:11
+Epoch [72/100] Batch [13/16] Loss: 0.5030 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:12
+Epoch [72/100] Batch [14/16] Loss: 0.5029 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:13
+Epoch [72/100] Batch [15/16] Loss: 0.5029 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:13
+Epoch [72/100] Batch [16/16] Loss: 0.5029 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5029, Top-1: 99.94%, Top-5: 100.00%
+Val Loss: 0.7618, Top-1: 91.20%, Top-5: 98.45%
+Saved best model with accuracy: 91.20%
+
+Epoch: 73/100, LR: 0.000199
+Epoch [73/100] Batch [1/16] Loss: 0.5016 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [73/100] Batch [2/16] Loss: 0.5018 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [73/100] Batch [3/16] Loss: 0.5023 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:03
+Epoch [73/100] Batch [4/16] Loss: 0.5022 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [73/100] Batch [5/16] Loss: 0.5021 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:05
+Epoch [73/100] Batch [6/16] Loss: 0.5021 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [73/100] Batch [7/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:07
+Epoch [73/100] Batch [8/16] Loss: 0.5025 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:07
+Epoch [73/100] Batch [9/16] Loss: 0.5026 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:08
+Epoch [73/100] Batch [10/16] Loss: 0.5026 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:09
+Epoch [73/100] Batch [11/16] Loss: 0.5026 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:10
+Epoch [73/100] Batch [12/16] Loss: 0.5026 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:11
+Epoch [73/100] Batch [13/16] Loss: 0.5026 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:12
+Epoch [73/100] Batch [14/16] Loss: 0.5026 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:12
+Epoch [73/100] Batch [15/16] Loss: 0.5026 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:13
+Epoch [73/100] Batch [16/16] Loss: 0.5025 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5025, Top-1: 99.96%, Top-5: 100.00%
+Val Loss: 0.7634, Top-1: 91.08%, Top-5: 98.38%
+
+Epoch: 74/100, LR: 0.000186
+Epoch [74/100] Batch [1/16] Loss: 0.5026 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:01
+Epoch [74/100] Batch [2/16] Loss: 0.5027 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:02
+Epoch [74/100] Batch [3/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:03
+Epoch [74/100] Batch [4/16] Loss: 0.5030 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:04
+Epoch [74/100] Batch [5/16] Loss: 0.5028 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:05
+Epoch [74/100] Batch [6/16] Loss: 0.5029 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:06
+Epoch [74/100] Batch [7/16] Loss: 0.5029 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:06
+Epoch [74/100] Batch [8/16] Loss: 0.5027 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:07
+Epoch [74/100] Batch [9/16] Loss: 0.5027 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:08
+Epoch [74/100] Batch [10/16] Loss: 0.5026 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:09
+Epoch [74/100] Batch [11/16] Loss: 0.5026 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:10
+Epoch [74/100] Batch [12/16] Loss: 0.5027 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:11
+Epoch [74/100] Batch [13/16] Loss: 0.5026 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:11
+Epoch [74/100] Batch [14/16] Loss: 0.5027 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:12
+Epoch [74/100] Batch [15/16] Loss: 0.5026 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:13
+Epoch [74/100] Batch [16/16] Loss: 0.5026 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5026, Top-1: 99.95%, Top-5: 100.00%
+Val Loss: 0.7657, Top-1: 90.95%, Top-5: 98.41%
+
+Epoch: 75/100, LR: 0.000174
+Epoch [75/100] Batch [1/16] Loss: 0.5048 Top-1: 99.84%, Top-5: 100.00% Time: 00:00:01
+Epoch [75/100] Batch [2/16] Loss: 0.5037 Top-1: 99.87%, Top-5: 100.00% Time: 00:00:02
+Epoch [75/100] Batch [3/16] Loss: 0.5031 Top-1: 99.90%, Top-5: 100.00% Time: 00:00:03
+Epoch [75/100] Batch [4/16] Loss: 0.5027 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:04
+Epoch [75/100] Batch [5/16] Loss: 0.5028 Top-1: 99.92%, Top-5: 100.00% Time: 00:00:05
+Epoch [75/100] Batch [6/16] Loss: 0.5028 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:06
+Epoch [75/100] Batch [7/16] Loss: 0.5028 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:06
+Epoch [75/100] Batch [8/16] Loss: 0.5028 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:07
+Epoch [75/100] Batch [9/16] Loss: 0.5027 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:08
+Epoch [75/100] Batch [10/16] Loss: 0.5027 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:09
+Epoch [75/100] Batch [11/16] Loss: 0.5027 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:10
+Epoch [75/100] Batch [12/16] Loss: 0.5026 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:11
+Epoch [75/100] Batch [13/16] Loss: 0.5027 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:11
+Epoch [75/100] Batch [14/16] Loss: 0.5027 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:12
+Epoch [75/100] Batch [15/16] Loss: 0.5026 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:13
+Epoch [75/100] Batch [16/16] Loss: 0.5026 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5026, Top-1: 99.94%, Top-5: 100.00%
+Val Loss: 0.7626, Top-1: 91.00%, Top-5: 98.52%
+
+Epoch: 76/100, LR: 0.000161
+Epoch [76/100] Batch [1/16] Loss: 0.5027 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [76/100] Batch [2/16] Loss: 0.5022 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:02
+Epoch [76/100] Batch [3/16] Loss: 0.5020 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:03
+Epoch [76/100] Batch [4/16] Loss: 0.5020 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [76/100] Batch [5/16] Loss: 0.5020 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:05
+Epoch [76/100] Batch [6/16] Loss: 0.5021 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [76/100] Batch [7/16] Loss: 0.5020 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [76/100] Batch [8/16] Loss: 0.5020 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [76/100] Batch [9/16] Loss: 0.5020 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [76/100] Batch [10/16] Loss: 0.5023 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:09
+Epoch [76/100] Batch [11/16] Loss: 0.5023 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:10
+Epoch [76/100] Batch [12/16] Loss: 0.5023 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:11
+Epoch [76/100] Batch [13/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:12
+Epoch [76/100] Batch [14/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:12
+Epoch [76/100] Batch [15/16] Loss: 0.5024 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:13
+Epoch [76/100] Batch [16/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5024, Top-1: 99.96%, Top-5: 100.00%
+Val Loss: 0.7622, Top-1: 91.12%, Top-5: 98.58%
+
+Epoch: 77/100, LR: 0.000149
+Epoch [77/100] Batch [1/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:01
+Epoch [77/100] Batch [2/16] Loss: 0.5024 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:02
+Epoch [77/100] Batch [3/16] Loss: 0.5022 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:03
+Epoch [77/100] Batch [4/16] Loss: 0.5024 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:04
+Epoch [77/100] Batch [5/16] Loss: 0.5024 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:05
+Epoch [77/100] Batch [6/16] Loss: 0.5024 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:06
+Epoch [77/100] Batch [7/16] Loss: 0.5024 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:06
+Epoch [77/100] Batch [8/16] Loss: 0.5024 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:07
+Epoch [77/100] Batch [9/16] Loss: 0.5023 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:08
+Epoch [77/100] Batch [10/16] Loss: 0.5023 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:09
+Epoch [77/100] Batch [11/16] Loss: 0.5023 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:10
+Epoch [77/100] Batch [12/16] Loss: 0.5023 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:11
+Epoch [77/100] Batch [13/16] Loss: 0.5023 Top-1: 99.94%, Top-5: 100.00% Time: 00:00:11
+Epoch [77/100] Batch [14/16] Loss: 0.5022 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:12
+Epoch [77/100] Batch [15/16] Loss: 0.5022 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:13
+Epoch [77/100] Batch [16/16] Loss: 0.5022 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5022, Top-1: 99.95%, Top-5: 100.00%
+Val Loss: 0.7631, Top-1: 91.05%, Top-5: 98.49%
+
+Epoch: 78/100, LR: 0.000138
+Epoch [78/100] Batch [1/16] Loss: 0.5031 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:01
+Epoch [78/100] Batch [2/16] Loss: 0.5026 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:02
+Epoch [78/100] Batch [3/16] Loss: 0.5024 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:03
+Epoch [78/100] Batch [4/16] Loss: 0.5024 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:04
+Epoch [78/100] Batch [5/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:05
+Epoch [78/100] Batch [6/16] Loss: 0.5023 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [78/100] Batch [7/16] Loss: 0.5025 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:06
+Epoch [78/100] Batch [8/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:07
+Epoch [78/100] Batch [9/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:08
+Epoch [78/100] Batch [10/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:09
+Epoch [78/100] Batch [11/16] Loss: 0.5023 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:10
+Epoch [78/100] Batch [12/16] Loss: 0.5023 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:11
+Epoch [78/100] Batch [13/16] Loss: 0.5023 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:11
+Epoch [78/100] Batch [14/16] Loss: 0.5023 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:12
+Epoch [78/100] Batch [15/16] Loss: 0.5022 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:13
+Epoch [78/100] Batch [16/16] Loss: 0.5022 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5022, Top-1: 99.97%, Top-5: 100.00%
+Val Loss: 0.7619, Top-1: 91.10%, Top-5: 98.48%
+
+Epoch: 79/100, LR: 0.000127
+Epoch [79/100] Batch [1/16] Loss: 0.5014 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [79/100] Batch [2/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:02
+Epoch [79/100] Batch [3/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:03
+Epoch [79/100] Batch [4/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [79/100] Batch [5/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:05
+Epoch [79/100] Batch [6/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [79/100] Batch [7/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [79/100] Batch [8/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [79/100] Batch [9/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [79/100] Batch [10/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:09
+Epoch [79/100] Batch [11/16] Loss: 0.5019 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:10
+Epoch [79/100] Batch [12/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [79/100] Batch [13/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [79/100] Batch [14/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:12
+Epoch [79/100] Batch [15/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:13
+Epoch [79/100] Batch [16/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5019, Top-1: 99.97%, Top-5: 100.00%
+Val Loss: 0.7603, Top-1: 91.32%, Top-5: 98.53%
+Saved best model with accuracy: 91.32%
+
+Epoch: 80/100, LR: 0.000116
+Epoch [80/100] Batch [1/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:01
+Epoch [80/100] Batch [2/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [80/100] Batch [3/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:03
+Epoch [80/100] Batch [4/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [80/100] Batch [5/16] Loss: 0.5016 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:05
+Epoch [80/100] Batch [6/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [80/100] Batch [7/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [80/100] Batch [8/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [80/100] Batch [9/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:08
+Epoch [80/100] Batch [10/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [80/100] Batch [11/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [80/100] Batch [12/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [80/100] Batch [13/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [80/100] Batch [14/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:12
+Epoch [80/100] Batch [15/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [80/100] Batch [16/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5019, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7616, Top-1: 91.33%, Top-5: 98.51%
+Saved best model with accuracy: 91.33%
+
+Epoch: 81/100, LR: 0.000105
+Epoch [81/100] Batch [1/16] Loss: 0.5013 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [81/100] Batch [2/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:02
+Epoch [81/100] Batch [3/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:03
+Epoch [81/100] Batch [4/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [81/100] Batch [5/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:05
+Epoch [81/100] Batch [6/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [81/100] Batch [7/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [81/100] Batch [8/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [81/100] Batch [9/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:08
+Epoch [81/100] Batch [10/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [81/100] Batch [11/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [81/100] Batch [12/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [81/100] Batch [13/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [81/100] Batch [14/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [81/100] Batch [15/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [81/100] Batch [16/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5019, Top-1: 99.97%, Top-5: 100.00%
+Val Loss: 0.7601, Top-1: 91.34%, Top-5: 98.51%
+Saved best model with accuracy: 91.34%
+
+Epoch: 82/100, LR: 0.000095
+Epoch [82/100] Batch [1/16] Loss: 0.5012 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [82/100] Batch [2/16] Loss: 0.5012 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [82/100] Batch [3/16] Loss: 0.5014 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:03
+Epoch [82/100] Batch [4/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [82/100] Batch [5/16] Loss: 0.5016 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:05
+Epoch [82/100] Batch [6/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [82/100] Batch [7/16] Loss: 0.5016 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [82/100] Batch [8/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [82/100] Batch [9/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:08
+Epoch [82/100] Batch [10/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [82/100] Batch [11/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:10
+Epoch [82/100] Batch [12/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [82/100] Batch [13/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [82/100] Batch [14/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:12
+Epoch [82/100] Batch [15/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:13
+Epoch [82/100] Batch [16/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5019, Top-1: 99.97%, Top-5: 100.00%
+Val Loss: 0.7597, Top-1: 91.22%, Top-5: 98.45%
+
+Epoch: 83/100, LR: 0.000086
+Epoch [83/100] Batch [1/16] Loss: 0.5016 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:01
+Epoch [83/100] Batch [2/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:02
+Epoch [83/100] Batch [3/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:03
+Epoch [83/100] Batch [4/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:04
+Epoch [83/100] Batch [5/16] Loss: 0.5019 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:05
+Epoch [83/100] Batch [6/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [83/100] Batch [7/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [83/100] Batch [8/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [83/100] Batch [9/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:08
+Epoch [83/100] Batch [10/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [83/100] Batch [11/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [83/100] Batch [12/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [83/100] Batch [13/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [83/100] Batch [14/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [83/100] Batch [15/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [83/100] Batch [16/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5016, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7595, Top-1: 91.33%, Top-5: 98.53%
+
+Epoch: 84/100, LR: 0.000077
+Epoch [84/100] Batch [1/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:01
+Epoch [84/100] Batch [2/16] Loss: 0.5024 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:02
+Epoch [84/100] Batch [3/16] Loss: 0.5022 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:03
+Epoch [84/100] Batch [4/16] Loss: 0.5020 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:04
+Epoch [84/100] Batch [5/16] Loss: 0.5020 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:05
+Epoch [84/100] Batch [6/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [84/100] Batch [7/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [84/100] Batch [8/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:07
+Epoch [84/100] Batch [9/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [84/100] Batch [10/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:09
+Epoch [84/100] Batch [11/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:10
+Epoch [84/100] Batch [12/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [84/100] Batch [13/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [84/100] Batch [14/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:12
+Epoch [84/100] Batch [15/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:13
+Epoch [84/100] Batch [16/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5018, Top-1: 99.97%, Top-5: 100.00%
+Val Loss: 0.7596, Top-1: 91.32%, Top-5: 98.43%
+
+Epoch: 85/100, LR: 0.000068
+Epoch [85/100] Batch [1/16] Loss: 0.5023 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:01
+Epoch [85/100] Batch [2/16] Loss: 0.5022 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [85/100] Batch [3/16] Loss: 0.5025 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:03
+Epoch [85/100] Batch [4/16] Loss: 0.5024 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:04
+Epoch [85/100] Batch [5/16] Loss: 0.5024 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:05
+Epoch [85/100] Batch [6/16] Loss: 0.5023 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:06
+Epoch [85/100] Batch [7/16] Loss: 0.5021 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [85/100] Batch [8/16] Loss: 0.5020 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:07
+Epoch [85/100] Batch [9/16] Loss: 0.5020 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [85/100] Batch [10/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [85/100] Batch [11/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [85/100] Batch [12/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [85/100] Batch [13/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [85/100] Batch [14/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:12
+Epoch [85/100] Batch [15/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:13
+Epoch [85/100] Batch [16/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5018, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7607, Top-1: 91.30%, Top-5: 98.50%
+
+Epoch: 86/100, LR: 0.000060
+Epoch [86/100] Batch [1/16] Loss: 0.5014 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [86/100] Batch [2/16] Loss: 0.5019 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:02
+Epoch [86/100] Batch [3/16] Loss: 0.5019 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:03
+Epoch [86/100] Batch [4/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:04
+Epoch [86/100] Batch [5/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:05
+Epoch [86/100] Batch [6/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [86/100] Batch [7/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [86/100] Batch [8/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:07
+Epoch [86/100] Batch [9/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [86/100] Batch [10/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:09
+Epoch [86/100] Batch [11/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:10
+Epoch [86/100] Batch [12/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [86/100] Batch [13/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:11
+Epoch [86/100] Batch [14/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:12
+Epoch [86/100] Batch [15/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:13
+Epoch [86/100] Batch [16/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5018, Top-1: 99.97%, Top-5: 100.00%
+Val Loss: 0.7591, Top-1: 91.34%, Top-5: 98.44%
+
+Epoch: 87/100, LR: 0.000053
+Epoch [87/100] Batch [1/16] Loss: 0.5017 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:01
+Epoch [87/100] Batch [2/16] Loss: 0.5016 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [87/100] Batch [3/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:03
+Epoch [87/100] Batch [4/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:04
+Epoch [87/100] Batch [5/16] Loss: 0.5020 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:05
+Epoch [87/100] Batch [6/16] Loss: 0.5020 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:06
+Epoch [87/100] Batch [7/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [87/100] Batch [8/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:07
+Epoch [87/100] Batch [9/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [87/100] Batch [10/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:09
+Epoch [87/100] Batch [11/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:10
+Epoch [87/100] Batch [12/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [87/100] Batch [13/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [87/100] Batch [14/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [87/100] Batch [15/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [87/100] Batch [16/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5017, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7592, Top-1: 91.45%, Top-5: 98.48%
+Saved best model with accuracy: 91.45%
+
+Epoch: 88/100, LR: 0.000045
+Epoch [88/100] Batch [1/16] Loss: 0.5014 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [88/100] Batch [2/16] Loss: 0.5014 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [88/100] Batch [3/16] Loss: 0.5016 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:03
+Epoch [88/100] Batch [4/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [88/100] Batch [5/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:05
+Epoch [88/100] Batch [6/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [88/100] Batch [7/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [88/100] Batch [8/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [88/100] Batch [9/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:08
+Epoch [88/100] Batch [10/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:09
+Epoch [88/100] Batch [11/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:10
+Epoch [88/100] Batch [12/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [88/100] Batch [13/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [88/100] Batch [14/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [88/100] Batch [15/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [88/100] Batch [16/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5015, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7593, Top-1: 91.41%, Top-5: 98.42%
+
+Epoch: 89/100, LR: 0.000039
+Epoch [89/100] Batch [1/16] Loss: 0.5013 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [89/100] Batch [2/16] Loss: 0.5013 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [89/100] Batch [3/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:03
+Epoch [89/100] Batch [4/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:04
+Epoch [89/100] Batch [5/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:05
+Epoch [89/100] Batch [6/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [89/100] Batch [7/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:07
+Epoch [89/100] Batch [8/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [89/100] Batch [9/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:08
+Epoch [89/100] Batch [10/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [89/100] Batch [11/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:10
+Epoch [89/100] Batch [12/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [89/100] Batch [13/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [89/100] Batch [14/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [89/100] Batch [15/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [89/100] Batch [16/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5014, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7595, Top-1: 91.48%, Top-5: 98.46%
+Saved best model with accuracy: 91.48%
+
+Epoch: 90/100, LR: 0.000033
+Epoch [90/100] Batch [1/16] Loss: 0.5011 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [90/100] Batch [2/16] Loss: 0.5012 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [90/100] Batch [3/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:03
+Epoch [90/100] Batch [4/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [90/100] Batch [5/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:05
+Epoch [90/100] Batch [6/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [90/100] Batch [7/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [90/100] Batch [8/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [90/100] Batch [9/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:08
+Epoch [90/100] Batch [10/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [90/100] Batch [11/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [90/100] Batch [12/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [90/100] Batch [13/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [90/100] Batch [14/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [90/100] Batch [15/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [90/100] Batch [16/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5016, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7593, Top-1: 91.38%, Top-5: 98.52%
+
+Epoch: 91/100, LR: 0.000027
+Epoch [91/100] Batch [1/16] Loss: 0.5011 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [91/100] Batch [2/16] Loss: 0.5013 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:02
+Epoch [91/100] Batch [3/16] Loss: 0.5012 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:03
+Epoch [91/100] Batch [4/16] Loss: 0.5013 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [91/100] Batch [5/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:05
+Epoch [91/100] Batch [6/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [91/100] Batch [7/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [91/100] Batch [8/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:07
+Epoch [91/100] Batch [9/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:08
+Epoch [91/100] Batch [10/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:09
+Epoch [91/100] Batch [11/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:10
+Epoch [91/100] Batch [12/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [91/100] Batch [13/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [91/100] Batch [14/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:12
+Epoch [91/100] Batch [15/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:13
+Epoch [91/100] Batch [16/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5015, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7585, Top-1: 91.42%, Top-5: 98.46%
+
+Epoch: 92/100, LR: 0.000022
+Epoch [92/100] Batch [1/16] Loss: 0.5012 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [92/100] Batch [2/16] Loss: 0.5013 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [92/100] Batch [3/16] Loss: 0.5011 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:03
+Epoch [92/100] Batch [4/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:04
+Epoch [92/100] Batch [5/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:05
+Epoch [92/100] Batch [6/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [92/100] Batch [7/16] Loss: 0.5012 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:06
+Epoch [92/100] Batch [8/16] Loss: 0.5012 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:07
+Epoch [92/100] Batch [9/16] Loss: 0.5012 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:08
+Epoch [92/100] Batch [10/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:09
+Epoch [92/100] Batch [11/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:10
+Epoch [92/100] Batch [12/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [92/100] Batch [13/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [92/100] Batch [14/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:12
+Epoch [92/100] Batch [15/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [92/100] Batch [16/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5014, Top-1: 99.99%, Top-5: 100.00%
+Val Loss: 0.7581, Top-1: 91.49%, Top-5: 98.51%
+Saved best model with accuracy: 91.49%
+
+Epoch: 93/100, LR: 0.000017
+Epoch [93/100] Batch [1/16] Loss: 0.5036 Top-1: 99.90%, Top-5: 100.00% Time: 00:00:02
+Epoch [93/100] Batch [2/16] Loss: 0.5024 Top-1: 99.95%, Top-5: 100.00% Time: 00:00:02
+Epoch [93/100] Batch [3/16] Loss: 0.5019 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:03
+Epoch [93/100] Batch [4/16] Loss: 0.5018 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [93/100] Batch [5/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:05
+Epoch [93/100] Batch [6/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [93/100] Batch [7/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [93/100] Batch [8/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:07
+Epoch [93/100] Batch [9/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [93/100] Batch [10/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [93/100] Batch [11/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [93/100] Batch [12/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [93/100] Batch [13/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [93/100] Batch [14/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [93/100] Batch [15/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [93/100] Batch [16/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5015, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7580, Top-1: 91.42%, Top-5: 98.47%
+
+Epoch: 94/100, LR: 0.000013
+Epoch [94/100] Batch [1/16] Loss: 0.5013 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [94/100] Batch [2/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:02
+Epoch [94/100] Batch [3/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:03
+Epoch [94/100] Batch [4/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:04
+Epoch [94/100] Batch [5/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:05
+Epoch [94/100] Batch [6/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [94/100] Batch [7/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [94/100] Batch [8/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:07
+Epoch [94/100] Batch [9/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [94/100] Batch [10/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [94/100] Batch [11/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [94/100] Batch [12/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [94/100] Batch [13/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [94/100] Batch [14/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [94/100] Batch [15/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [94/100] Batch [16/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5014, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7576, Top-1: 91.40%, Top-5: 98.49%
+
+Epoch: 95/100, LR: 0.000010
+Epoch [95/100] Batch [1/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:01
+Epoch [95/100] Batch [2/16] Loss: 0.5020 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [95/100] Batch [3/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:03
+Epoch [95/100] Batch [4/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [95/100] Batch [5/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:05
+Epoch [95/100] Batch [6/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [95/100] Batch [7/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [95/100] Batch [8/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [95/100] Batch [9/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:08
+Epoch [95/100] Batch [10/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [95/100] Batch [11/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [95/100] Batch [12/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [95/100] Batch [13/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [95/100] Batch [14/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [95/100] Batch [15/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [95/100] Batch [16/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5014, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7577, Top-1: 91.42%, Top-5: 98.51%
+
+Epoch: 96/100, LR: 0.000007
+Epoch [96/100] Batch [1/16] Loss: 0.5021 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:01
+Epoch [96/100] Batch [2/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [96/100] Batch [3/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:03
+Epoch [96/100] Batch [4/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [96/100] Batch [5/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:05
+Epoch [96/100] Batch [6/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:05
+Epoch [96/100] Batch [7/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [96/100] Batch [8/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:07
+Epoch [96/100] Batch [9/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:08
+Epoch [96/100] Batch [10/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:09
+Epoch [96/100] Batch [11/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:10
+Epoch [96/100] Batch [12/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:10
+Epoch [96/100] Batch [13/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [96/100] Batch [14/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:12
+Epoch [96/100] Batch [15/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:13
+Epoch [96/100] Batch [16/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5014, Top-1: 99.99%, Top-5: 100.00%
+Val Loss: 0.7579, Top-1: 91.48%, Top-5: 98.51%
+
+Epoch: 97/100, LR: 0.000004
+Epoch [97/100] Batch [1/16] Loss: 0.5009 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [97/100] Batch [2/16] Loss: 0.5016 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [97/100] Batch [3/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:03
+Epoch [97/100] Batch [4/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [97/100] Batch [5/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:05
+Epoch [97/100] Batch [6/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [97/100] Batch [7/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [97/100] Batch [8/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:07
+Epoch [97/100] Batch [9/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:08
+Epoch [97/100] Batch [10/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [97/100] Batch [11/16] Loss: 0.5015 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:10
+Epoch [97/100] Batch [12/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [97/100] Batch [13/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:11
+Epoch [97/100] Batch [14/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:12
+Epoch [97/100] Batch [15/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [97/100] Batch [16/16] Loss: 0.5014 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5014, Top-1: 99.99%, Top-5: 100.00%
+Val Loss: 0.7579, Top-1: 91.45%, Top-5: 98.51%
+
+Epoch: 98/100, LR: 0.000002
+Epoch [98/100] Batch [1/16] Loss: 0.5011 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [98/100] Batch [2/16] Loss: 0.5010 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:02
+Epoch [98/100] Batch [3/16] Loss: 0.5011 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:03
+Epoch [98/100] Batch [4/16] Loss: 0.5011 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:04
+Epoch [98/100] Batch [5/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:05
+Epoch [98/100] Batch [6/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:06
+Epoch [98/100] Batch [7/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:07
+Epoch [98/100] Batch [8/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:07
+Epoch [98/100] Batch [9/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:08
+Epoch [98/100] Batch [10/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:09
+Epoch [98/100] Batch [11/16] Loss: 0.5013 Top-1: 99.99%, Top-5: 100.00% Time: 00:00:10
+Epoch [98/100] Batch [12/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [98/100] Batch [13/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [98/100] Batch [14/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [98/100] Batch [15/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [98/100] Batch [16/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5015, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7578, Top-1: 91.43%, Top-5: 98.47%
+
+Epoch: 99/100, LR: 0.000001
+Epoch [99/100] Batch [1/16] Loss: 0.5013 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [99/100] Batch [2/16] Loss: 0.5019 Top-1: 99.93%, Top-5: 100.00% Time: 00:00:02
+Epoch [99/100] Batch [3/16] Loss: 0.5017 Top-1: 99.96%, Top-5: 100.00% Time: 00:00:03
+Epoch [99/100] Batch [4/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:04
+Epoch [99/100] Batch [5/16] Loss: 0.5017 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:05
+Epoch [99/100] Batch [6/16] Loss: 0.5016 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:06
+Epoch [99/100] Batch [7/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:07
+Epoch [99/100] Batch [8/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [99/100] Batch [9/16] Loss: 0.5014 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:08
+Epoch [99/100] Batch [10/16] Loss: 0.5014 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [99/100] Batch [11/16] Loss: 0.5015 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:10
+Epoch [99/100] Batch [12/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [99/100] Batch [13/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [99/100] Batch [14/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [99/100] Batch [15/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [99/100] Batch [16/16] Loss: 0.5015 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5015, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7579, Top-1: 91.39%, Top-5: 98.50%
+
+Epoch: 100/100, LR: 0.000000
+Epoch [100/100] Batch [1/16] Loss: 0.5011 Top-1: 100.00%, Top-5: 100.00% Time: 00:00:01
+Epoch [100/100] Batch [2/16] Loss: 0.5021 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:02
+Epoch [100/100] Batch [3/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:03
+Epoch [100/100] Batch [4/16] Loss: 0.5019 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:04
+Epoch [100/100] Batch [5/16] Loss: 0.5018 Top-1: 99.97%, Top-5: 100.00% Time: 00:00:05
+Epoch [100/100] Batch [6/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [100/100] Batch [7/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:06
+Epoch [100/100] Batch [8/16] Loss: 0.5017 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:07
+Epoch [100/100] Batch [9/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:08
+Epoch [100/100] Batch [10/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:09
+Epoch [100/100] Batch [11/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:10
+Epoch [100/100] Batch [12/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [100/100] Batch [13/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:11
+Epoch [100/100] Batch [14/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:12
+Epoch [100/100] Batch [15/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:13
+Epoch [100/100] Batch [16/16] Loss: 0.5016 Top-1: 99.98%, Top-5: 100.00% Time: 00:00:14
+Train Loss: 0.5016, Top-1: 99.98%, Top-5: 100.00%
+Val Loss: 0.7579, Top-1: 91.40%, Top-5: 98.49%
+
+============================================================
+Training completed in 00:29:38
+Best Top-1 Accuracy: 91.49%
+============================================================
