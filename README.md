@@ -1,4 +1,4 @@
-# ProRes on ResNets: normalization and residual scaling across ImageNet-100, CIFAR-100, and CIFAR-10
+# ProRes on ResNets: normalization and residual scaling
 
 This repository contains the reference implementation and results for a controlled study of **ProRes** (progressive residual scaling) in ResNets. The experiment crosses three depths (ResNet-50, 101, 152), two normalization layouts (PostNorm, PreNorm), and ProRes on/off, on three datasets: ImageNet-100, CIFAR-100, and CIFAR-10. That is 12 runs per dataset, 36 in total.
 
