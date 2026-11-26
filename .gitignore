@@ -1,0 +1,7 @@
+data/imagenet100/
+data/*.tar.gz
+__pycache__/
+*.pyc
+.vscode/
+results/*/train_*/
+*.pth
